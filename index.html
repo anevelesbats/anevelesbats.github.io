@@ -1,52 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr"> 
-    <head>
-        <meta charset="utf-8">
-        <title>Antoine Neve--Lesbats</title>
-        <!-- <img src="../img/photo_cv.jpg" alt="Moi"> -->
-    </head>
-    <body>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Antoine Neve -- Lesbats</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="/html/parcours_academique.html">Parcours académique</a></li>
+            <li><a href="/html/parcours_professionnel.html">Parcours professionnel</a></li>
+            <li><a href="/html/projets_personnels.html">Projets professionnels</a></li>
+            <li><a href="/html/projets_personnels.html">Projets personnels</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img class="my-cv-picture" src="../img/photo_cv.png" alt="Moi">
         <h1>Bienvenue sur mon CV</h1>
-            <p>
-                Dans ce site web, vous pourrez en apprendre davantage sur moi,
-                que ce soit personnellement ou professionnellement.
-            </p>
-    </body>
-    <body>
-        <a href="/html/parcours_academique.html">
-            <h2>Parcours académique</h2>
-        </a>
-            <p>
-                Vous pouvez retrouver mon parcours académique avec 
-                les compétences acquises durant mes différentes formations. 
-            </p>
-        <a href="html/parcours_professionnel.html">
+    </header>
+
+    <main class="gradient-background">
+        <section class="parcours" id="presentation">
+            <h2>Présentation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </section>
+
+        <section class="parcours">
+            <a href="/html/parcours_academique.html">
+                <h2>Parcours académique</h2>
+            </a>
+            <p>Vous pouvez retrouver mon parcours académique avec les compétences acquises...</p>
+        </section>
+
+        <section class="parcours">
+            <a href="/html/parcours_professionnel.html">
                 <h2>Parcours professionnel</h2>
-        </a>
-            <p>
-                Vous trouverez ici, les différents jobs, stages et alternance que j'ai pu réalisé. 
-            </p>
-        <a href="/html/projets_personnels.html">
+            </a>
+            <p>Vous trouverez ici les différents jobs, stages et alternances que j'ai pu réaliser.</p>
+        </section>
+
+        <section class="parcours">
+            <a href="/html/projets_personnels.html">
                 <h2>Projets professionnels</h2>
-        </a>
+            </a>
             <p>Vous pouvez retrouver mes projets réalisés en entreprise.</p>
-        <a href="/html/projets_personnels.html">
-            <h2>Projets personnels</h2>
-        </a>
-            <p>
-                <ul>
-                    <li>Conception d'un site web</li>
-                    <li>Conception d'un bibliothèque en ligne de commande</li>
-                </ul>
-            </p>
-    </body>
-    <body>
-        <p>Pour davantage d'informations, n'hésitez pas à me contacter par 
-            <a href="mailto:ANTOINE.NEVE@ICLOUD.COM">email</a>
-        </p>
-        <p>Suivez moi sur
-            <a href="https://www.linkedin.com/in/antoine-neve-lesbats-82456a269/" target="_blank">Linkedin</a>
-            pour être à jour sur mon profil.
-        </p>
-    </body>
+        </section>
+
+        <section class="parcours">
+            <a href="/html/projets_personnels.html">
+                <h2>Projets personnels</h2>
+            </a>
+            <ul>
+                <li>Conception d'un site web</li>
+                <li>Conception d'une bibliothèque en ligne de commande</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Antoine Neve-Lesbats. Tous droits réservés.</p>
+        <div class="social-media">
+            <a href="mailto:ANTOINE.NEVE@ICLOUD.COM">
+                <img src="img/mail.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/antoine-neve-lesbats-82456a269/" target="_blank">
+                <img src="img/icons8-linkedin-48.png" alt="Linkedin">
+            </a>
+        </div>
+    </footer>
+</body>
 </html>
