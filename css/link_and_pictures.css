@@ -1,0 +1,33 @@
+.my-cv-picture {
+    width: 200px;
+    height: 151px;
+    position: absolute;
+    top: 0;
+    right: 3em;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.8em;
+    margin-right: 1em;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.social-media img {
+    width: auto;
+    height: 20px;
+}
+
+.social-media a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
