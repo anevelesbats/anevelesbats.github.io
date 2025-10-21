@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Antoine Neve -- Lesbats</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/parcours_academique.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/link_and_pictures.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
     <nav class="navbar">
@@ -26,8 +31,7 @@
             <h2>Présentation</h2>
             <p>Je m'appelle Antoine Neve Lesbats et je suis actuellement en troisième année à l'Enseirb Matmeca 
                 au sein de la formation <strong>Systèmes Électroniques Embarqués</strong>. Je réalise cette formation en apprentissage
-                à <strong>Thales Six</strong> (entité spécialisée dans les systèmes de radiocommunications) à Cholet. Je travaille 
-                dans un laboratoire d'<strong>intégration</strong> et de <strong>développement embarqué</strong> sur divers équipements radios.
+                à <strong>Thales Six</strong> à Cholet. Je travaille dans un laboratoire d'<strong>intégration</strong> et de <strong>développement embarqué</strong> sur divers équipements radios.
                 Étudiant <strong>dynamique</strong> avec un fort <strong>esprit d’équipe</strong>, cette formation en apprentissage me permet de développer 
                 de nouvelles aptitudes dans le monde professionnel. 
             </p>
@@ -37,91 +41,101 @@
             <h2>Parcours académique</h2>
             <div class="suboxes_parcours_academique">
                 <div class="box_enseirb">
-                    <h3>Diplôme d'ingénieur en Systèmes Électroniques Embarqués en alternance</h3>
-                        <p><em>Enseirb-Matmeca : 2023 - En cours
-                            <br>Talence (33) - France</br></em>
-                        </p>
+                    <div class="header_enseirb">
+                        <h3>Diplôme d'ingénieur en Systèmes Électroniques Embarqués en alternance</h3>
+                        <p><em>Enseirb-Matmeca : 2023 - En cours<br>Talence (33) - France</em></p>
+                    </div>
+                    <div class="content_enseirb">
+                        <div class="cours_enseirb">
+                            <p><strong>Cours :</strong></p>
+                            <ul>
+                                <li>Mathématiques pour l'ingénieur appliquées au traitement de signal.</li>
+                                <li>Physique : propagation des ondes, semi-conducteurs.</li>
+                                <li>Automatique : régulation PI, PID, PIDF.</li>
+                                <li>Programmation : C, C++</li>
+                                <li>Sytème d'exploitation UNIX.</li>
+                                <li>Traitement numérique d'images et vidéos.</li>
+                                <li>Intelligence artificielle : machine learning, deep learning.</li>
+                                <li>Robotique embarquée : ros1.</li>
+                                <li>Capteurs embarqués : zephyr.</li>
+                                <li>Introduction aux réseaux : types et architectures.</li>
+                            </ul>
+                        </div>
+                        <div class="projets_enseirb">
+                            <p><strong>Projets :</strong></p>
+                            <ul>
+                                <li>Conception d'une bataille navale en ligne de commande.</li>
+                                <li>Simulation d'un système de radiocommunications.</li>
+                                <li>Conception d'une médiathèque en ligne de commande.</li>
+                                <li>Conception d'un processeur avec jeu d'instructions.</li>
+                                <li>Manipulation d'objet avec le bras robotique XARM6.</li>
+                            </ul>
+                        </div>
+                        <div class="certifications">
+                            <p><strong>Certifications :</strong></p>
+                                <ul>
+                                    <li>Obtention du TOEIC avec le niveau C1 : 955/990</li>
+                                </ul>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="box_dut_geii">
-                    <h3>DUT en Génie Électrique et Informatique Industrielle</h3>
-                        <p><em>Iut de Bordeaux : 2021 - 2023
-                            <br>Gradignan (33) -  France</br></em>
-                        </p>
+                    <div class="header_geii">
+                        <h3>DUT Génie Électrique et Informatique Industrielle</h3>
+                        <p><em>IUT de Bordeaux : 2021 - 2023<br>Gradignan (33) - France</em></p>
+                    </div>
+                    <div class="content_geii">
+                        <div class="cours_geii">
+                            <p><strong>Cours :</strong></p>
+                            <ul>
+                                <li>Outils mathématiques et logiciels.</li>
+                                <li>Électronique analogique et numérique.</li>
+                                <li>Automatisme : principes de base d'un automate.</li>
+                                <li>Systèmes embarqués : microcontrôleur.</li>
+                                <li>Physique appliquée : transfert thermique, ondes, électromagnétisme.</li>
+                                <li>Informatique : Python, C.</li>
+                                <li>Électrotechnique.</li>
+                            </ul>
+                        </div>
+                        <div class="projets_geii">
+                            <p><strong>Projets :</strong></p>
+                            <ul>
+                                <li>Brassard lumineux pour cycliste.</li>
+                                <li>Kart télécommandé infrarouge.</li>
+                                <li>Mini robot combat (ATmega328P).</li>
+                                <li>Antenne 144 MHz.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="parcours" id="parcours_professionnel">
-                <h2>Parcours professionnel</h2>
-            <p>Vous trouverez ici les différents jobs, stages et alternances que j'ai pu réaliser.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. 
-            Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
-            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-            Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
-            Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. 
-            Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. 
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. 
-            Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
-            Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. 
-            Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, 
-            felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
-            </p>
+            <h2>Parcours professionnel</h2>
+            <p>Vous trouverez ici les différents jobs, stages et alternances que j'ai pu réaliser.</p>
         </section>
 
         <section class="parcours" id="projets_professionnels">
-                <h2>Projets professionnels</h2>
-            <p>Vous pouvez retrouver mes projets réalisés en entreprise.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. 
-            Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
-            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-            Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
-            Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. 
-            Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. 
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. 
-            Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
-            Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. 
-            Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, 
-            felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
-            </p>
+            <h2>Projets professionnels</h2>
+            <p>Vous pouvez retrouver mes projets réalisés en entreprise.</p>
         </section>
 
         <section class="parcours" id="projets_personnels">
-                <h2>Projets académique</h2>
+            <h2>Projets académiques</h2>
             <ul>
                 <li>Conception d'un site web</li>
                 <li>Conception d'une bibliothèque en ligne de commande</li>
             </ul>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. 
-            Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
-            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-            Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
-            Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. 
-            Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. 
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. 
-            Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
-            Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. 
-            Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, 
-            felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
-            </p>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Antoine Neve-Lesbats. Tous droits réservés.</p>
         <div class="social-media">
-            <a href="mailto:ANTOINE.NEVE@ICLOUD.COM">
-                <img src="img/mail.png" alt="Email">
-            </a>
-            <a href="https://www.linkedin.com/in/antoine-neve-lesbats-82456a269/" target="_blank">
-                <img src="img/linkedin.png" alt="Linkedin">
-            </a>
+            <a href="mailto:ANTOINE.NEVE@ICLOUD.COM"><img src="img/mail.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/antoine-neve-lesbats-82456a269/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
         </div>
     </footer>
 </body>

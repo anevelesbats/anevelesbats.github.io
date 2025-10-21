@@ -1,0 +1,89 @@
+.parcours {
+    border: 2px solid rgb(53, 114, 161);
+    border-radius: 10px;
+    display: block; 
+    width: 100%;
+    margin: 1em 0;
+    padding: 0em 1em;
+}
+
+.suboxes_parcours_academique {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.suboxes_parcours_academique ul {
+    list-style-type: square;
+}
+
+.box_dut_geii {
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid rgba(53, 114, 161, 0.388);
+    border-top: 4px solid rgba(53, 114, 161, 0.388);
+    border-radius: 6px;
+    padding: 1.5em 2em;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    margin-left: 4em;
+    background-color: transparent;
+    text-align: left;
+    gap: 1.5em;
+}
+
+.header_geii, .header_enseirb {
+    text-align: left;
+}
+
+.header_geii h3, .header_enseirb h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: black;
+}
+
+.header_geii p, .header_enseirb p {
+    font-style: italic;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 0.3em;
+}
+
+.content_geii, .content_enseirb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3em;
+    align-items: stretch;
+}
+
+.cours_geii, .projets_geii, .cours_enseirb, .projets_enseirb, .certifications {
+    flex: 1;
+    background-color: transparent;
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.cours_geii ul, .projets_geii ul, .cours_enseirb ul, .projets_enseirb ul, .certifications ul{
+    list-style-type: square;
+    margin-left: 1.5em;
+    width: 100%;         
+    word-wrap: break-word;
+    white-space: normal; 
+}
+
+
+.cours_geii li, .projets_geii li, .cours_enseirb li, .projets_enseirb li, .certifications li{
+    line-height: 1.5em;
+    max-width: none;    
+}
+
+.box_enseirb {
+    border-left: 4px solid rgba(53, 114, 161, 0.388);
+    border-top: 4px solid rgba(53, 114, 161, 0.388);
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    margin-left: 1em;
+}

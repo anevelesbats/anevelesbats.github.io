@@ -8,7 +8,6 @@ body {
     background-color: rgb(213, 206, 206);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
-    /* font-size: 1.2em; */
 }
 
 h1 {
@@ -46,123 +45,10 @@ a {
     padding: 1em 2em;
 }
 
-header {
-    position: relative;
-    text-align: center;
-    min-height: 100px;
-}
 
-.my-cv-picture {
-    width: 200px;
-    height: 151px;
-    position: absolute;
-    top: 0;
-    right: 3em;
-}
-
-.parcours {
-    border: 2px solid rgb(53, 114, 161);
-    border-radius: 10px;
-    display: block; 
-    width: fit-content;
-    margin: 1em 0;
-    padding: 0em 1em;
-}
-
-.suboxes_parcours_academique {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 2em; 
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.box_dut_geii {
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1em 1.5em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 4em;
-}
-
-.box_enseirb {
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1em 1.5em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 1em;
-}
-
-/* 
-.parcours:hover {
-    opacity: 0.75;
-} */
-
-.navbar {
-    background-color: #5C7990;
-    padding: 0.5em 1em;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar a {
-    color: white;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #5C7990;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    flex: 1;
-    text-align: center;
-    margin: 0;
-}
-
-.social-media {
-    display: flex;
-    gap: 0.8em;
-    margin-right: 1em;
-}
-
-.social-media a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.social-media img {
-    width: auto;
-    height: 20px;
-}
-
-.social-media a:hover {
-    background-color: #ddd;
-    cursor: pointer;
+@media (max-width: 800px) {
+    .content_geii {
+        flex-direction: column;
+        gap: 1em;
+    }
 }
