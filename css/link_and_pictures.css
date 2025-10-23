@@ -31,3 +31,120 @@
     background-color: #ddd;
     cursor: pointer;
 }
+
+.logo_bde {
+    position: absolute;
+    top: 0.1em;   
+    right: 0.1em;  
+    width: 120px;  
+    height: auto;  
+}
+
+.logo_oeno {
+    position: absolute;
+    top: -0.5em;   
+    right: -1em;  
+    width: 120px;  
+    height: auto;  
+}
+
+.logo_bae {
+    position: absolute;
+    top: 0.1em;   
+    right: 0.1em;  
+    width: 120px;  
+    height: auto;  
+}
+
+.logos {
+    float: right;
+    top: 0.5em;
+    right: 1em;
+    display: flex;
+    gap: 0.5em;
+    transition: transform 0.2s ease;
+}
+
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+.langage_c {
+    width: 30px;  
+    height: auto;  
+}
+
+
+.langage_cpp{
+    width: 30px;
+    height: auto;
+}
+
+.ros{
+    width: 60px;
+    height: auto;
+}
+
+.vhdl{
+    width: 60px;
+    height: auto;
+}
+
+.asm{
+    width: 30px;
+    height: auto;
+}
+
+.ads{
+    width: 30px;
+    height: auto;
+}
+
+.html_css{ 
+    width: 50px;
+    height: auto;
+}
+
+.github-link {
+  margin-top: 1.2em;
+}
+
+.github-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  background-color: #4b5a6e;
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.github-link a:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.github-link img {
+  width: 40px;
+  height: auto;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #4b5a6e; 
+  color: #fff;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-link:hover {
+  background-color: #333; 
+  transform: translateY(-1px);
+}

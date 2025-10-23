@@ -10,50 +10,60 @@
     <link rel="stylesheet" href="css/link_and_pictures.css">
     <link rel="stylesheet" href="css/parcours_academique.css">
     <link rel="stylesheet" href="css/parcours_professionnel.css">
+    <link rel="stylesheet" href="css/engagement_associatif.css">
+    <link rel="stylesheet" href="css/projets.css">
 </head>
 <body>
+    <div id="top"></div>
     <nav class="navbar">
         <ul>
-            <li><a href="#presentation">Introduction</a></li>
-            <li><a href="#parcours_academique">Academic background</a></li>
-            <li><a href="#parcours_professionnel">Professional experience</a></li>
-            <li><a href="#projets_professionnels">Professional projects</a></li>
-            <li><a href="#projets_personnels">Academic projects</a></li>
+            <li><a href="#top" class="logo"><img src="img/home.png" alt="Home logo"></a></li>
+            <li><a href="#presentation">About Me</a></li>
+            <li><a href="#parcours_academique">Academic Background</a></li>
+            <li><a href="#parcours_professionnel">Professional Experience</a></li>
+            <li><a href="#vie_associative">Associative Involvement</a></li>
+            <li><a href="#projets">Projects</a></li>
             <li class="lang-switch"><a href="index.html">FR</a> | <a href="index_en.html">EN</a></li>
         </ul>
     </nav>
 
     <header>
         <img class="my-cv-picture" src="img/photo_cv.png" alt="Me">
-        <h1>Welcome to my Resume</h1>
+        <h1>Welcome to my CV</h1>
     </header>
 
     <main class="gradient-background">
         <section class="parcours" id="presentation">
-            <h2>Introduction</h2>
-            <p>My name is Antoine Neve Lesbats, and I am currently in my third year at <strong>Enseirb-Matmeca</strong>, 
-                studying <strong>Embedded Electronic Systems Engineering</strong>. I am completing this program through an apprenticeship 
-                at <strong>Thales Six</strong> in Cholet. I work in a laboratory focused on <strong>integration</strong> and 
-                <strong>embedded development</strong> on various radio equipment. A <strong>motivated</strong> student with a strong 
-                <strong>team spirit</strong>, this apprenticeship allows me to develop new skills in a professional environment.
+            <h2>About Me</h2>
+            <p>My name is Antoine Neve Lesbats and I am currently in my third year at <strong>Enseirb-Matmeca</strong> 
+                in the <strong>Embedded Electronic Systems Engineering</strong> program. I am completing this degree through an apprenticeship
+                at <strong>Thales Six</strong> in Cholet, France. I work in a laboratory dedicated to <strong>integration</strong> and <strong>embedded development</strong> 
+                on various radio systems.
+                <br><br>
+                As a <strong>motivated</strong> student with a strong <strong>team spirit</strong>, this apprenticeship enables me to develop new skills 
+                in a professional environment. 
+                <br><br>
+                Moreover, I am involved in several student associations at my school, which helped me develop skills 
+                in <strong>financial management</strong> (budgeting, anticipating potential income and expenses) and in <strong>contract management</strong> 
+                (communication, conflict management, and knowledge of certain regulations). 
             </p>
         </section>
 
         <section class="parcours" id="parcours_academique">
-            <h2>Academic background</h2>
+            <h2>Academic Background</h2>
             <div class="suboxes_parcours_academique">
                 <div class="box_enseirb">
                     <div class="header_enseirb">
-                        <h3>Engineering degree in Embedded Electronic Systems (work-study program)</h3>
+                        <h3>Engineering Degree in Embedded Electronic Systems (Apprenticeship)</h3>
                         <p><em>Enseirb-Matmeca: 2023 - Present<br>Talence (33) - France</em></p>
                     </div>
                     <div class="content_enseirb">
                         <div class="cours_enseirb">
                             <p><strong>Courses:</strong></p>
                             <ul>
-                                <li>Applied mathematics for signal processing.</li>
+                                <li>Mathematics for engineers applied to signal processing.</li>
                                 <li>Physics: wave propagation, semiconductors.</li>
-                                <li>Control systems: PI, PID, PIDF regulation.</li>
+                                <li>Control theory: PI, PID, PIDF controllers.</li>
                                 <li>Programming: <strong>C, C++.</strong></li>
                                 <li>Operating systems: <strong>UNIX.</strong></li>
                                 <li>Digital image and video processing.</li>
@@ -66,47 +76,48 @@
                         <div class="projets_enseirb">
                             <p><strong>Projects:</strong></p>
                             <ul>
-                                <li>Design of a battleship game in command line.</li>
+                                <li>Command-line Battleship game.</li>
                                 <li>Simulation of a radio communication system.</li>
-                                <li>Design of a media library in command line.</li>
-                                <li>Design of a processor with its own instruction set.</li>
-                                <li>Object manipulation using the XARM6 robotic arm.</li>
+                                <li>Development of a local messaging system between two terminals.</li>
+                                <li>Command-line media library.</li>
+                                <li>Processor design with instruction set.</li>
+                                <li>Object manipulation with the XARM6 robotic arm.</li>
                             </ul>
                         </div>
                         <div class="certifications">
                             <p><strong>Certifications:</strong></p>
-                                <ul>
-                                    <li>TOEIC score: C1 level, 955/990.</li>
-                                </ul>
+                            <ul>
+                                <li>TOEIC: Level C1 (955/990)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="box_dut_geii">
                     <div class="header_geii">
-                        <h3>University Diploma in Electrical and Industrial Computing Engineering (DUT GEII)</h3>
-                        <p><em>IUT of Bordeaux: 2021 - 2023<br>Gradignan (33) - France</em></p>
+                        <h3>University Technical Diploma (DUT) in Electrical and Industrial Computer Engineering</h3>
+                        <p><em>IUT de Bordeaux: 2021 - 2023<br>Gradignan (33) - France</em></p>
                     </div>
                     <div class="content_geii">
                         <div class="cours_geii">
                             <p><strong>Courses:</strong></p>
                             <ul>
-                                <li>Mathematical tools and software.</li>
+                                <li>Mathematical and software tools.</li>
                                 <li>Analog and digital electronics.</li>
-                                <li>Automation: basic principles of automation systems.</li>
-                                <li>Embedded systems: microcontroller programming.</li>
+                                <li>Automation: basics of programmable logic controllers.</li>
+                                <li>Embedded systems: microcontrollers.</li>
                                 <li>Applied physics: heat transfer, waves, electromagnetism.</li>
                                 <li>Computer science: <strong>Python, C.</strong></li>
-                                <li>Electrical engineering: single-phase/three-phase systems, transformers, DC machines, AC/DC conversion.</li>
+                                <li>Electrical engineering: single-phase/triple-phase, transformers, DC machines, AC/DC conversion.</li>
                             </ul>
                         </div>
                         <div class="projets_geii">
                             <p><strong>Projects:</strong></p>
                             <ul>
-                                <li>Design of a light-up armband for cyclists.</li>
-                                <li>Infrared remote-controlled go-kart.</li>
+                                <li>Light-up armband for cyclists.</li>
+                                <li>Infrared remote-controlled kart.</li>
                                 <li>Mini combat robot (ATmega328P).</li>
-                                <li>Design of a 144 MHz antenna.</li>
+                                <li>144 MHz antenna.</li>
                             </ul>
                         </div>
                     </div>
@@ -115,7 +126,7 @@
         </section>
 
         <section class="parcours" id="parcours_professionnel">
-            <h2>Professional experience</h2>
+            <h2>Professional Experience</h2>
             <div class="suboxes_parcours_professionnel">
                 <div class="box_apprentissage">
                     <div class="header_apprentissage">
@@ -124,27 +135,27 @@
                     </div>
                     <div class="content_apprentissage">
                         <div class="first_year">
-                            <p><strong>First year: study of a new testing framework</strong></p>
+                            <p><strong>First Year: Study of a new test framework</strong></p>
                                 <ul>
-                                    <li>Framework architecture: UML diagram creation.</li>
-                                    <li>Development of <strong>Python</strong> software modules according to team requirements.</li>
-                                    <li><strong>Automation of tests</strong> on remote hosts using <strong>SSH tunnels.</strong></li>
+                                    <li>Framework architecture: UML diagrams.</li>
+                                    <li>Development of <strong>Python</strong> software modules based on team needs.</li>
+                                    <li><strong>Automation of tests</strong> on a remote host using <strong>SSH tunnels.</strong></li>
                             </ul>
                         </div>
                         <div class="second_year">
-                            <p><strong>Second year: modification of an embedded algorithmic architecture</strong></p>
+                            <p><strong>Second Year: Modification of an embedded algorithmic architecture</strong></p>
                             <ul>
-                                <li>Study of the current architecture in use.</li>
+                                <li>Study of the currently used architecture.</li>
                                 <li>Creation of new <strong>architectural diagrams.</strong></li>
-                                <li>Software development: <strong>thread creation</strong>, <strong>memory management</strong>, and <strong>inter-core message handling.</strong></li>
-                                <li>Implementation of <strong>unit tests</strong> to validate the new architecture.</li>
-                                <li>Real-time <strong>CPU performance measurements</strong> using internal tools.</li>
+                                <li>Software development: creation of <strong>threads</strong>, <strong>memory</strong> management, and <strong>inter-core messaging.</strong></li>
+                                <li><strong>Unit testing</strong> to validate the new architecture.</li>
+                                <li><strong>Real-time CPU measurements</strong> using internal software.</li>
                             </ul>
                         </div>
                         <div class="third_year">
-                            <p><strong>Third year: standardization of SoC RF integration and usage</strong></p>
+                            <p><strong>Third Year: Standardization of SoC RF integration and usage</strong></p>
                             <ul>
-                                <li>To be continued...</li>
+                                <li>Coming soon...</li>
                             </ul>
                         </div>
                     </div>
@@ -152,14 +163,14 @@
                 <div class="box_stage">
                     <div class="header_stage">
                        <h3>Research Technician</h3>
-                        <p><em>University of New York: 04/2023 - 06/2023<br>Binghamton (NY) - USA</em></p>
+                        <p><em>New York University: 04/2023 - 06/2023<br>Binghamton (NY) - USA</em></p>
                     </div>
                     <div class="content_stage">
                         <div class="detection_armes">
-                            <p><strong>Firearm detection algorithm</strong></p>
+                            <p><strong>Firearm Detection Algorithm</strong></p>
                             <ul>
-                                <li>Modified an existing image database to include multiple viewing angles.</li>
-                                <li>Trained models using <strong>visual detection algorithms.</strong></li>
+                                <li>Modified an existing image database to add different viewing angles.</li>
+                                <li><strong>Trained</strong> models on the dataset using <strong>visual detection algorithms.</strong></li>
                                 <li>Implemented object detection using <strong>Python and OpenCV.</strong></li>
                             </ul>
                         </div>
@@ -167,7 +178,7 @@
                 </div>
                 <div class="box_leclerc">
                     <div class="header_leclerc">
-                        <h3>Cashier and Customer Service Host</h3>
+                        <h3>Cashier and Customer Service Assistant</h3>
                         <p><em>Leclerc: 04/2022 - 08/2023<br>Mazères-Lezons (64) - France</em></p>                       
                     </div>
                     <div class="content_leclerc">
@@ -178,9 +189,9 @@
                             </ul>
                         </div>
                         <div class="hote_accueil">
-                            <p><strong>Customer Service Host</strong></p>
+                            <p><strong>Customer Service Assistant</strong></p>
                             <ul>
-                                <li>Assisted customers and handled various in-store requests.</li>
+                                <li>Assisted clients with various requests and concerns.</li>
                             </ul>
                         </div>
                     </div>
@@ -188,17 +199,257 @@
             </div>
         </section>
 
-        <section class="parcours" id="projets_professionnels">
-            <h2>Professional projects</h2>
-            <p>Here are some of my projects completed in a professional environment.</p>
+        <section class="parcours" id="vie_associative">
+            <h2>Associative Involvement</h2>
+            <div class="suboxes_engagement_associatif">
+                <div class="box_bde">
+                    <img src="img/logo_bde.webp" alt="BDE logo" class="logo_bde">
+                    <div class="header_bde">
+                       <h3>Student Union (BDE)</h3>
+                        <p><em>Enseirb-Matmeca: 04/2024 - 04/2025<br>Talence (33) - France</em></p>            
+                    </div>
+                    <div class="content_bde">
+                        <div class="respo_part">
+                            <p><strong>Partnership Manager</strong></p>
+                            <ul>
+                                <li>Contact potential partners.</li>
+                                <li>Negotiate contracts.</li>
+                                <li>Manage the BDE’s textiles and goodies.</li>
+                                <li>Coordinate activities organized by partners.</li>
+                                <li>Resolve conflicts between partners and the BDE.</li>
+                                <li>Organize events such as the integration weekend with 500 participants.</li>
+                            </ul>
+                        </div>
+                        <div class="respo_bar">
+                            <p><strong>Bar Manager</strong></p>
+                            <ul>
+                                <li>Supervised a team of five people.</li>
+                                <li>Prepared drinks during events.</li>
+                                <li>Managed bar stock and supplies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_bae">
+                    <img src="img/logo_bae.png" alt="BAE logo" class="logo_bae">
+                    <div class="header_bae">
+                       <h3>Apprentice Student Union (BAE)</h3>
+                        <p><em>Enseirb-Matmeca: 04/2024 - 04/2025<br>Talence (33) - France</em></p>         
+                    </div>
+                    <div class="content_bae">
+                        <div class="vice_tresorier">
+                            <p><strong>Vice Treasurer</strong></p>
+                            <ul>
+                                <li>Managed the association’s finances: bank account and cash.</li>
+                                <li>Planned purchases and sales for events with up to 400 participants.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_oeno">
+                    <img src="img/logo_oeno.png" alt="OENO logo" class="logo_oeno">
+                    <div class="header_oeno">
+                       <h3>Wine Club</h3>
+                        <p><em>Enseirb-Matmeca: 04/2024 - 04/2025<br>Talence (33) - France</em></p>         
+                    </div>
+                    <div class="content_oeno">
+                        <div class="tresorier">
+                            <p><strong>Treasurer</strong></p>
+                            <ul>
+                                <li>Managed the club’s finances.</li>
+                                <li>Planned events: Wine Bar evenings, tastings, vineyard visits.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="parcours" id="projets_personnels">
-            <h2>Academic projects</h2>
-            <ul>
-                <li>Website design and development.</li>
-                <li>Development of a command-line library system.</li>
-            </ul>
+        <section class="parcours" id="projets">
+            <h2>Projects</h2>
+            <div class="suboxes_projets">
+                <div class="box_battleship">
+                    <div class="header_battleship">
+                        <div class="logos">
+                            <img src="img/langage_c.png" alt="C language" class="langage_c">
+                        </div>
+                        <h3>Command-Line Battleship Game</h3>
+                        <p><em>Enseirb-Matmeca: First-year project</em></p>
+                    </div>
+                    <div class="content_battleship">
+                        <p><strong>Project Objectives</strong></p>
+                        <p>The goal of this project was to design a battleship game in a terminal 
+                            to play against a computer. The program displays the game grid, ships, 
+                            ship health points, status of each ship, and remaining ships.</p>
+                        <p><strong>Concepts Used (C Language)</strong></p>
+                        <ul>
+                            <li>Array manipulation.</li>
+                            <li>String handling.</li>
+                            <li>Number representation.</li>
+                            <li>Pointer management.</li>
+                            <li>Struct manipulation.</li>
+                        </ul>
+                        <p class="github-link">
+                            <a href="https://github.com/anevelesbats/battleship" target="_blank">
+                                <img src="img/github.png" alt="GitHub">
+                                GitHub Repository
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box_ads">
+                    <div class="header_ads">
+                        <div class="logos">
+                            <img src="img/logo_ads.jpg" alt="ADS" class="ads">
+                        </div>                        
+                        <h3>Simulation of a Radio Communication System</h3>
+                        <p><em>Enseirb-Matmeca: Second-year project</em></p>
+                    </div>
+                    <div class="content_ads">
+                        <p><strong>Project Objectives</strong></p>
+                        <p>The project introduced students to the simulation of a telecommunication 
+                            transmission–reception system using QPSK modulation. The chain consisted of predefined RF components 
+                            (amplifiers, mixers, modulators, filters, oscillators, antennas, propagation channel, etc.).</p>
+                        <p><strong>Concepts Used</strong></p>
+                        <ul>
+                            <li>QPSK Modulation (Quadrature Phase Shift Keying)</li>
+                            <li>Raised Cosine Filter</li>
+                            <li>RF Transmit–Receive Chain</li>
+                            <li>RF/IF Mixer</li>
+                            <li>Power Amplifier (PA) and Low-Noise Amplifier (LNA)</li>
+                            <li>Non-linearity and 1 dB Compression Point (P1dB)</li>
+                            <li>GSM Propagation Channel (loss, attenuation, phase shift, delay)</li>
+                            <li>Constellation and Eye Diagram</li>
+                            <li>Bit Error Rate (BER)</li>
+                        </ul>
+                        <p>
+                            <a href="documents/TP_ADS_Filter_Antoine_Neve--Lesbats.pdf" target="_blank" class="btn-link">View PDF Report</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box_messagerie">
+                    <div class="header_messagerie">
+                        <div class="logos">
+                            <img src="img/langage_c.png" alt="C language" class="langage_c">
+                        </div>
+                        <h3>Local Messaging System Between Two Terminals</h3>
+                        <p><em>Enseirb-Matmeca: Second-year project</em></p>
+                    </div>
+                    <div class="content_messagerie">
+                        <p><strong>Project Objectives</strong></p>
+                        <p>The goal was to implement a local chat system using a client/server model.  
+                            Each client runs as an independent process, while a central process (server) 
+                            manages and redistributes communications between clients.</p>
+                        <p><strong>Concepts Used</strong></p>
+                        <ul>
+                            <li>Process management: fork().</li>
+                            <li>File manipulation with access control.</li>
+                            <li>Pipe and signal handling.</li>
+                        </ul>
+                        <p class="github-link">
+                            <a href="https://github.com/anevelesbats/chat" target="_blank">
+                                <img src="img/github.png" alt="GitHub">
+                                GitHub Repository
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box_mediatheque"> 
+                    <div class="header_mediatheque">
+                        <div class="logos">
+                            <img src="img/langage_c++.png" alt="C++" class="langage_cpp"> 
+                        </div>                        
+                        <h3>Command-Line Media Library</h3>
+                        <p><em>Enseirb-Matmeca: Second-year project</em></p>
+                    </div>
+                    <div class="content_mediatheque">
+                        <p><strong>Project Objectives</strong></p>
+                        <p>The goal of this project was to develop a C++ application for managing a media library, 
+                            applying object-oriented programming principles.  
+                            The application provides features such as adding, deleting, browsing, and searching for resources 
+                            (books, CDs, DVDs, magazines, etc.), as well as saving and loading data and managing 
+                            borrowing and reservation operations.  
+                            It also supports multi-user management with distinct permissions for administrators and clients.</p>
+                        <p><strong>Concepts Used</strong></p>
+                        <ul>
+                            <li>Classes and objects: type definition.</li>
+                            <li>Encapsulation (<code>public</code> / <code>private</code> / <code>protected</code>): interface vs implementation separation.</li>
+                            <li>Inheritance: derived classes.</li>
+                            <li>Polymorphism and virtual functions: dynamic calls via base pointers and references.</li>
+                            <li>Abstract classes and pure virtual methods: non-instantiable base classes.</li>
+                            <li>Constructors and destructors: object initialization and cleanup.</li>
+                            <li>Header/source separation: <code>.hpp</code> for interfaces, <code>.cpp</code> for implementations.</li>
+                            <li>Pointers and references: managing relationships between objects (passing and storage).</li>
+                            <li>STL containers: storing collections (resources, users).</li>
+                        </ul>
+                        <p class="github-link">
+                            <a href="https://github.com/anevelesbats/mediatheque" target="_blank">
+                                <img src="img/github.png" alt="GitHub">
+                                GitHub Repository
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="box_processeur">
+                    <div class="header_processeur">
+                        <div class="logos">
+                            <img src="img/logo_vhdl.png" alt="VHDL" class="vhdl"> 
+                            <img src="img/logo_assembleur_v2.png" alt="ASM" class="asm">
+                        </div>                        
+                        <h3>Processor Design with Instruction Set</h3>
+                        <p><em>Enseirb-Matmeca: Second-year project</em></p>
+                    </div>
+                    <div class="content_processeur">
+                        <p><strong>Project Objectives</strong></p>
+                        <p>The goal was to design a simple processor in VHDL with a basic instruction set.  
+                            The processor performs arithmetic, logical, and control flow operations.  
+                            The project includes the design of the control unit, ALU, registers, and memory, as well as
+                            a test interface to simulate and validate its operation.</p>
+                        <p><strong>Concepts Used</strong></p>
+                        <ul>
+                            <li>Hardware design in VHDL.</li>
+                            <li>Processor architecture: components and organization.</li>
+                            <li>Instruction set: supported operations.</li>
+                            <li>Control unit: instruction flow management.</li>
+                            <li>Arithmetic Logic Unit (ALU): arithmetic and logic operations.</li>
+                            <li>Registers and memory: data and instruction storage.</li>
+                            <li>Simulation and testing: validation of functionality.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box_robotique">
+                    <div class="header_robotique">
+                        <div class="logos">
+                            <img src="img/langage_c++.png" alt="C++" class="langage_cpp"> 
+                            <img src="img/ros.png" alt="ROS" class="ros">
+                        </div>                       
+                        <h3>Object Manipulation with the XARM6 Robotic Arm</h3>
+                        <p><em>Enseirb-Matmeca: Third-year project</em></p>
+                    </div>
+                    <div class="content_robotique">
+                        <p><strong>Project in progress...</strong></p>
+                    </div>
+                </div>
+
+                <div class="box_website">
+                    <div class="header_website">
+                        <div class="logos">
+                            <img src="img/logo_html_css.webp" alt="HTML/CSS" class="html_css">
+                        </div>
+                        <h3>Website Creation</h3>                        
+                        <p><em>Personal Project</em></p>
+                    </div>
+                    <div class="content_website">
+                        <p>Development of a personal website using <strong>HTML</strong> and <strong>CSS</strong> 
+                        to showcase my academic and professional background, projects, and associative activities.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

@@ -55,7 +55,7 @@ a {
 }
 
 .lang-switch {
-  margin-left: auto; /* pousse le sélecteur à droite */
+  margin-left: auto; 
   font-weight: bold;
 }
 
@@ -68,4 +68,13 @@ a {
 .lang-switch a:hover {
   text-decoration: underline;
 }
+
+section {
+  scroll-margin-top: 45px; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
