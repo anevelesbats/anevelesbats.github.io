@@ -22,3 +22,10 @@
 .navbar a:hover {
     text-decoration: underline;
 }
+
+.navbar .logo img {
+  height: 20px; 
+  width: auto;
+  margin-left: 1em;
+  filter: invert(1);
+}

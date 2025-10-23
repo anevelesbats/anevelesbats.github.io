@@ -40,15 +40,41 @@ a {
     text-decoration: none;
 }
 
+.parcours {
+    border: 2px solid rgb(53, 114, 161);
+    border-radius: 10px;
+    display: block; 
+    width: 70%;
+    margin: 1em auto;
+    padding: 0em 1em;
+}
+
 .gradient-background {
     min-height: calc(100vh - 3.8em);
     padding: 1em 2em;
 }
 
-
-@media (max-width: 800px) {
-    .content_geii {
-        flex-direction: column;
-        gap: 1em;
-    }
+.lang-switch {
+  margin-left: auto; 
+  font-weight: bold;
 }
+
+.lang-switch a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.2em;
+}
+
+.lang-switch a:hover {
+  text-decoration: underline;
+}
+
+section {
+  scroll-margin-top: 45px; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
