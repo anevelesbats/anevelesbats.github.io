@@ -93,3 +93,47 @@
     line-height: 1.5em;
     max-width: none;    
 }
+
+@media screen and (max-width: 768px) {
+  .parcours,
+  .content_apprentissage,
+  .content_stage,
+  .content_leclerc {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* petit espace entre les sous-sections */
+    width: 100%;
+    display: block !important;
+  }
+ 
+  .box_apprentissage,
+  .box_stage,
+  .box_leclerc{
+    width: 100% ;
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+  
+  .box_apprentissage p,
+  .box_stage p,
+  .box_leclerc p{
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .box_apprentissage li,
+  .box_stage li,
+  .box_leclerc li{
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .content_professionnel div {
+    width: 100% !important;
+    margin: 0.5em 0;
+  }
+}

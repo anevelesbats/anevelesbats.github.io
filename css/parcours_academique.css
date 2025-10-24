@@ -90,3 +90,54 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+
+  .content_enseirb,
+  .content_geii
+   {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* petit espace entre les sous-sections */
+    width: 100%;
+    display: block !important;
+  }
+
+  .cours_enseirb,
+  .projets_enseirb,
+  .certifications {
+    width: 100%;
+  }
+
+
+  .box_enseirb,
+  .box_dut_geii
+   {
+    width: 100% ;
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+  .box_enseirb p,
+  .box_dut_geii p
+  {
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+    .box_enseirb li,
+  .box_dut_geii li
+  {
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .content_academique div {
+    width: 100% !important;
+    margin: 0.5em 0;
+  }
+
+}

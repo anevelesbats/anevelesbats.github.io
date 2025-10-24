@@ -9,6 +9,9 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
 }
+nav{
+    margin-bottom: 0;
+}
 
 h1 {
     background-color: #5C7990;
@@ -77,4 +80,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
+@media screen and (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+}
