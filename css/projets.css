@@ -146,3 +146,60 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+@media screen and (max-width: 768px) {
+  .content_battleship,
+  .content_ads,
+  .content_messagerie,
+  .content_mediatheque,
+  .content_processeur,
+  .content_robotique,
+  .content_website {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* petit espace entre les sous-sections */
+    width: 100%;
+    display: block !important;
+  }
+
+  .box_battleship,
+  .box_ads,
+  .box_messagerie,
+  .box_mediatheque,
+  .box_processeur,
+  .box_robotique,
+  .box_website {
+    width: 100% ;
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+  .box_battleship p,
+  .box_ads p,
+  .box_messagerie p,
+  .box_mediatheque p,
+  .box_processeur p,
+  .box_robotique p,
+  .box_website p{
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .box_battleship li,
+  .box_ads li,
+  .box_messagerie li,
+  .box_mediatheque li,
+  .box_processeur li,
+  .box_robotique li,
+  .box_website li{
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+
+}

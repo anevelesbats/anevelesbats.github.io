@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Antoine Neve -- Lesbats</title>
     <link rel="stylesheet" href="css/index.css">
@@ -16,16 +17,18 @@
 <body>
     <div id="top"></div>
     <nav class="navbar">
-        <ul>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+
+        <ul class="nav-links">
             <li><a href="#top" class="logo"><img src="img/home.png" alt="Logo personnel"></a></li>
             <li><a href="#presentation">Présentation</a></li>
             <li><a href="#parcours_academique">Parcours académique</a></li>
             <li><a href="#parcours_professionnel">Parcours professionnel</a></li>
             <li><a href="#vie_associative">Engagement associatif</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li class="lang-switch"><a href="index.html">FR</a> | <a href="index_en.html">EN</a>
-    </li>
+            <li class="lang-switch"><a href="index.html">FR</a> | <a href="index_en.html">EN</a></li>
         </ul>
+        <img src="img/photo_cv.png" alt="Moi" class="my-cv-picture-nav">
     </nav>
 
     <header>
@@ -467,5 +470,12 @@
             <a href="https://www.linkedin.com/in/antoine-neve-lesbats-82456a269/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
         </div>
     </footer>
+<script>
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 </body>
 </html>

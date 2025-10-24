@@ -96,3 +96,41 @@
     line-height: 1.5em;
     max-width: none;    
 }
+
+@media screen and (max-width: 768px) {
+  .content_bde,
+  .content_bae,
+  .content_oeno {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* petit espace entre les sous-sections */
+    width: 100%;
+    display: block !important;
+  }
+
+  .box_bde,
+  .box_bae,
+  .box_oeno {
+    width: 100% ;
+    border-radius: 8px;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+  .box_bde p,
+  .box_bae p,
+  .box_oeno {
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .box_bde li,
+  .box_bae li,
+  .box_oeno li{
+      word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+}
