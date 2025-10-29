@@ -13,451 +13,457 @@
     <link rel="stylesheet" href="css/parcours_professionnel.css">
     <link rel="stylesheet" href="css/engagement_associatif.css">
     <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <div id="top"></div>
-    <nav class="navbar">
-        <button class="menu-toggle" aria-label="Menu">☰</button>
-
-        <ul class="nav-links">
-            <li><a href="#top" class="logo"><img src="img/home.png" alt="Logo personnel"></a></li>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#parcours_academique">Parcours académique</a></li>
-            <li><a href="#parcours_professionnel">Parcours professionnel</a></li>
-            <li><a href="#vie_associative">Engagement associatif</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li class="lang-switch"><a href="index.html">FR</a> | <a href="index_en.html">EN</a></li>
-        </ul>
-        <img src="img/photo_cv.png" alt="Moi" class="my-cv-picture-nav">
-    </nav>
-
-    <header>
-        <img class="my-cv-picture" src="img/photo_cv.png" alt="Moi">
-        <h1>Bienvenue sur mon CV</h1>
+    <header class="navbar" id="navbar">
+        <div class="navbar-home">
+            <a href="#top"> <img src="img/photo_cv.png" alt="Moi" class="my-cv-picture-nav"></a>
+            <span class="nav-name">Antoine Neve--Lesbats</span>
+        </div>
+        <nav class="navbar-links" >
+            <a href="#presentation">Présentation</a>
+            <a href="#parcours_academique">Parcours académique</a>
+            <a href="#parcours_professionnel">Parcours professisonnel</a>
+            <a href="#vie_associative">Engagement associatif</a>
+            <a href="#projets">Projets</a>
+            <span class="lang-switch"><a href="index.html">FR</a> | <a href="index_en.html">EN</a></span>
+        </nav>
     </header>
 
-    <main class="gradient-background">
-        <section class="parcours" id="presentation">
-            <h2>Présentation</h2>
-            <p>Je m'appelle Antoine Neve Lesbats et je suis actuellement en troisième année à l'Enseirb Matmeca 
-                au sein de la formation <strong>Systèmes Électroniques Embarqués</strong>. Je réalise cette formation en apprentissage
-                à <strong>Thales Six</strong> à Cholet. Je travaille dans un laboratoire d'<strong>intégration</strong> et de <strong>développement embarqué</strong> sur divers équipements radios.
-                Étudiant <strong>dynamique</strong> avec un fort <strong>esprit d’équipe</strong>, cette formation en apprentissage me permet de développer 
-                de nouvelles aptitudes dans le monde professionnel. 
-                <br><br>
-                De plus, je me suis investi dans diverses associations au sein de mon école. Cet investissement m'a permis de développer certaines compétences notamment en <strong>gestion financière</strong>
-                (faire les comptes, anticiper des potentielles entrées et sorties d'argent) et en <strong>gestion de contrats</strong> (communication, gestion de conflits,
-                connaissance de certaines règlementations). 
-            </p>
+
+    <main>
+        <section class="home" id="presentation">
+            <div class="intro">
+                <img src="img/photo_cv.png" alt="Moi" class="my-cv-picture">
+                <div class="name">
+                    <h1>Antoine Neve--Lesbats</h1>
+                    <hr>
+                    <p>Étudiant Alternant à l’ENSEIRB–MATMECA en SEE</p>
+                    <p>Apprenti en 3ème année à Thales Six, Cholet</p>
+                </div>
+            </div>
+            <div class="presentation">
+                <p>Je m'appelle Antoine Neve Lesbats et je suis actuellement en troisième année à l'Enseirb Matmeca 
+                    au sein de la formation <strong>Systèmes Électroniques Embarqués</strong>. Je réalise cette formation en apprentissage
+                    à <strong>Thales Six</strong> à Cholet. Je travaille dans un laboratoire d'<strong>intégration</strong> et de <strong>développement embarqué</strong> sur divers équipements radios.
+                    Étudiant <strong>dynamique</strong> avec un fort <strong>esprit d’équipe</strong>, cette formation en apprentissage me permet de développer 
+                    de nouvelles aptitudes dans le monde professionnel. 
+                    <br><br>
+                    De plus, je me suis investi dans diverses associations au sein de mon école. Cet investissement m'a permis de développer certaines compétences notamment en <strong>gestion financière</strong>
+                    (faire les comptes, anticiper des potentielles entrées et sorties d'argent) et en <strong>gestion de contrats</strong> (communication, gestion de conflits,
+                    connaissance de certaines règlementations). 
+                </p>
+            </div>
+              <img src="img/systemes_embarques.jpg" alt="Systèmes embarqués" class="corner-image">
         </section>
 
-        <section class="parcours" id="parcours_academique">
+        <section class="parcours-academique" id="parcours_academique">
             <h2>Parcours académique</h2>
-            <div class="suboxes_parcours_academique">
-                <div class="box_enseirb">
-                    <div class="header_enseirb">
-                        <h3>Diplôme d'ingénieur en Systèmes Électroniques Embarqués en alternance</h3>
-                        <p><em>Enseirb-Matmeca : 2023 - En cours<br>Talence (33) - France</em></p>
+            <div class="box-enseirb">
+                <div class="header-enseirb">
+                    <h3>Diplôme d'ingénieur en Systèmes Électroniques Embarqués en alternance</h3>
+                    <p><em>Enseirb-Matmeca : 2023 - En cours<br>Talence (33) - France</em></p>
+                </div>
+                <div class="content-enseirb">
+                    <div class="cours-enseirb">
+                        <p><strong>Cours :</strong></p>
+                        <ul>
+                            <li>Mathématiques pour l'ingénieur appliquées au traitement de signal.</li>
+                            <li>Physique : propagation des ondes, semi-conducteurs.</li>
+                            <li>Automatique : régulation PI, PID, PIDF.</li>
+                            <li>Programmation : <strong>C, C++.</strong></li>
+                            <li>Sytème d'exploitation <strong>UNIX.</strong></li>
+                            <li>Traitement numérique d'images et vidéos.</li>
+                            <li>Intelligence artificielle : machine learning, deep learning.</li>
+                            <li>Robotique embarquée : <strong>ros1.</strong></li>
+                            <li>Capteurs embarqués : <strong>Zephyr.</strong></li>
+                            <li>Introduction aux réseaux : types et architectures.</li>
+                        </ul>
                     </div>
-                    <div class="content_enseirb">
-                        <div class="cours_enseirb">
-                            <p><strong>Cours :</strong></p>
+                    <div class="projets-enseirb">
+                        <p><strong>Projets :</strong></p>
+                        <ul>
+                            <li>Conception d'une bataille navale en ligne de commande.</li>
+                            <li>Simulation d'un système de radiocommunications.</li>
+                            <li>Conception d'un système de messagerie local entre deux terminaux.</li>
+                            <li>Conception d'une médiathèque en ligne de commande.</li>
+                            <li>Conception d'un processeur avec jeu d'instructions.</li>
+                            <li>Manipulation d'objet avec le bras robotique XARM6.</li>
+                        </ul>
+                    </div>
+                    <div class="certifications">
+                        <p><strong>Certifications :</strong></p>
                             <ul>
-                                <li>Mathématiques pour l'ingénieur appliquées au traitement de signal.</li>
-                                <li>Physique : propagation des ondes, semi-conducteurs.</li>
-                                <li>Automatique : régulation PI, PID, PIDF.</li>
-                                <li>Programmation : <strong>C, C++.</strong></li>
-                                <li>Sytème d'exploitation <strong>UNIX.</strong></li>
-                                <li>Traitement numérique d'images et vidéos.</li>
-                                <li>Intelligence artificielle : machine learning, deep learning.</li>
-                                <li>Robotique embarquée : <strong>ros1.</strong></li>
-                                <li>Capteurs embarqués : <strong>Zephyr.</strong></li>
-                                <li>Introduction aux réseaux : types et architectures.</li>
+                                <li>Obtention du TOEIC avec le niveau C1 : 955/990</li>
                             </ul>
-                        </div>
-                        <div class="projets_enseirb">
-                            <p><strong>Projets :</strong></p>
-                            <ul>
-                                <li>Conception d'une bataille navale en ligne de commande.</li>
-                                <li>Simulation d'un système de radiocommunications.</li>
-                                <li>Conception d'un système de messagerie local entre deux terminaux.</li>
-                                <li>Conception d'une médiathèque en ligne de commande.</li>
-                                <li>Conception d'un processeur avec jeu d'instructions.</li>
-                                <li>Manipulation d'objet avec le bras robotique XARM6.</li>
-                            </ul>
-                        </div>
-                        <div class="certifications">
-                            <p><strong>Certifications :</strong></p>
-                                <ul>
-                                    <li>Obtention du TOEIC avec le niveau C1 : 955/990</li>
-                                </ul>
-                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="box_dut_geii">
-                    <div class="header_geii">
-                        <h3>DUT Génie Électrique et Informatique Industrielle</h3>
-                        <p><em>IUT de Bordeaux : 2021 - 2023<br>Gradignan (33) - France</em></p>
+            <div class="box-dut">
+                <div class="header-dut">
+                    <h3>DUT Génie Électrique et Informatique Industrielle</h3>
+                    <p><em>IUT de Bordeaux : 2021 - 2023<br>Gradignan (33) - France</em></p>
+                </div>
+                <div class="content-dut">
+                    <div class="cours-dut">
+                        <p><strong>Cours :</strong></p>
+                        <ul>
+                            <li>Outils mathématiques et logiciels.</li>
+                            <li>Électronique analogique et numérique.</li>
+                            <li>Automatisme : principes de base d'un automate.</li>
+                            <li>Systèmes embarqués : microcontrôleur.</li>
+                            <li>Physique appliquée : transfert thermique, ondes, électromagnétisme.</li>
+                            <li>Informatique : <strong>Python, C.</strong></li>
+                            <li>Électrotechnique : monophasé / triphasé, transformateur, machine à courant continu, conversion AC/DC.</li>
+                        </ul>
                     </div>
-                    <div class="content_geii">
-                        <div class="cours_geii">
-                            <p><strong>Cours :</strong></p>
-                            <ul>
-                                <li>Outils mathématiques et logiciels.</li>
-                                <li>Électronique analogique et numérique.</li>
-                                <li>Automatisme : principes de base d'un automate.</li>
-                                <li>Systèmes embarqués : microcontrôleur.</li>
-                                <li>Physique appliquée : transfert thermique, ondes, électromagnétisme.</li>
-                                <li>Informatique : <strong>Python, C.</strong></li>
-                                <li>Électrotechnique : monophasé / triphasé, transformateur, machine à courant continu, conversion AC/DC.</li>
-                            </ul>
-                        </div>
-                        <div class="projets_geii">
-                            <p><strong>Projets :</strong></p>
-                            <ul>
-                                <li>Brassard lumineux pour cycliste.</li>
-                                <li>Kart télécommandé infrarouge.</li>
-                                <li>Mini robot combat (ATmega328P).</li>
-                                <li>Antenne 144 MHz.</li>
-                            </ul>
-                        </div>
+                    <div class="projets-dut">
+                        <p><strong>Projets :</strong></p>
+                        <ul>
+                            <li>Brassard lumineux pour cycliste.</li>
+                            <li>Kart télécommandé infrarouge.</li>
+                            <li>Mini robot combat (ATmega328P).</li>
+                            <li>Antenne 144 MHz.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="parcours" id="parcours_professionnel">
+        <section class="parcours-professionnel" id="parcours_professionnel">
             <h2>Parcours professionnel</h2>
-            <div class="suboxes_parcours_professionnel">
-                <div class="box_apprentissage">
-                    <div class="header_apprentissage">
-                       <h3>Apprenti intégrateur radio</h3>
-                        <p><em>Thales Six : 2023 - En cours<br>Cholet (49) - France</em></p>
+            <div class="box-apprentissage">
+                <div class="header-apprentissage">
+                    <h3>Apprenti intégrateur radio</h3>
+                    <p><em>Thales Six : 2023 - En cours<br>Cholet (49) - France</em></p>
+                </div>
+                <div class="content-apprentissage">
+                    <div class="first-year">
+                        <p><strong>Première année : étude d'un nouveau framework de test</strong></p>
+                            <ul>
+                                <li>Architecture du framework : réalisation de diagrammes UML.</li>
+                                <li>Développement de briques logicielles <strong>Python</strong> en accord avec les besoins de l'équipe.</li>
+                                <li><strong>Automatisation de tests</strong> sur un hôte distant à l'aide de <strong>tunnels SSH.</strong></li>
+                        </ul>
                     </div>
-                    <div class="content_apprentissage">
-                        <div class="first_year">
-                            <p><strong>Première année : étude d'un nouveau framework de test</strong></p>
-                                <ul>
-                                    <li>Architecture du framework : réalisation de diagrammes UML.</li>
-                                    <li>Développement de briques logicielles <strong>Python</strong> en accord avec les besoins de l'équipe.</li>
-                                    <li><strong>Automatisation de tests</strong> sur un hôte distant à l'aide de <strong>tunnels SSH.</strong></li>
-                            </ul>
-                        </div>
-                        <div class="second_year">
-                            <p><strong>Deuxième année : modification d'une architecture algorithmique embarqué</strong></p>
-                            <ul>
-                                <li>Étude de l'architecute actuellement utilisée.</li>
-                                <li>Réalisation de nouveaux <strong>schémas architecturaux.</strong></li>
-                                <li>Développement logiciel : création de <strong>threads</strong>, gestion de la <strong>mémoire</strong>, gestion des messages <strong>inter-coeurs.</strong></li>
-                                <li>Réalisation de <strong>tests unitaires</strong> afin de valider le fonctionnement de la nouvelle architecture.</li>
-                                <li>Réalisation de <strong>mesures CPU temps réel</strong> à l'aide d'un logiciel interne.</li>
-                            </ul>
-                        </div>
-                        <div class="third_year">
-                            <p><strong>Troisième année : standardisation de l'intégration et de l'utilisation d'un SoC RF</strong></p>
-                            <ul>
-                                <li>A venir...</li>
-                            </ul>
-                        </div>
+                    <div class="second-year">
+                        <p><strong>Deuxième année : modification d'une architecture algorithmique embarqué</strong></p>
+                        <ul>
+                            <li>Étude de l'architecute actuellement utilisée.</li>
+                            <li>Réalisation de nouveaux <strong>schémas architecturaux.</strong></li>
+                            <li>Développement logiciel : création de <strong>threads</strong>, gestion de la <strong>mémoire</strong>, gestion des messages <strong>inter-coeurs.</strong></li>
+                            <li>Réalisation de <strong>tests unitaires</strong> afin de valider le fonctionnement de la nouvelle architecture.</li>
+                            <li>Réalisation de <strong>mesures CPU temps réel</strong> à l'aide d'un logiciel interne.</li>
+                        </ul>
+                    </div>
+                    <div class="third-year">
+                        <p><strong>Troisième année : standardisation de l'intégration et de l'utilisation d'un SoC RF</strong></p>
+                        <ul>
+                            <li>A venir...</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box_stage">
-                    <div class="header_stage">
-                       <h3>Technicien de recherche</h3>
-                        <p><em>Université de New-York : 04/2023 - 06/2023<br>Binghamton (NY) - États-Unis</em></p>
-                    </div>
-                    <div class="content_stage">
-                        <div class="detection_armes">
-                            <p><strong>Algorithme de détection d'armes à feu</strong></p>
-                            <ul>
-                                <li>Modification d'une base de données existantes pour ajouter différents angles aux images.</li>
-                                <li>Réalisation d'un <strong>entraînement</strong> sur la base de données à l'aide <strong>d'algorithmes de détection visuelle.</strong></li>
-                                <li>Réalisation d'une détection d'objets à l'aide de <strong>Python et OpenCV</strong></li>
-                            </ul>
-                        </div>
+            </div>
+            <div class="box-stage">
+                <div class="header-stage">
+                    <h3>Technicien de recherche</h3>
+                    <p><em>Université de New-York : 04/2023 - 06/2023<br>Binghamton (NY) - États-Unis</em></p>
+                </div>
+                <div class="content-stage">
+                    <div class="detection-armes">
+                        <p><strong>Algorithme de détection d'armes à feu</strong></p>
+                        <ul>
+                            <li>Modification d'une base de données existantes pour ajouter différents angles aux images.</li>
+                            <li>Réalisation d'un <strong>entraînement</strong> sur la base de données à l'aide <strong>d'algorithmes de détection visuelle.</strong></li>
+                            <li>Réalisation d'une détection d'objets à l'aide de <strong>Python et OpenCV</strong></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box_leclerc">
-                    <div class="header_leclerc">
-                        <h3>Hôte de caisse et hôte d'accueil</h3>
-                        <p><em>Leclerc : 04/2022 - 08/2023<br>Mazères-Lezons (64) - France</em></p>                       
+            </div>
+            <div class="box-leclerc">
+                <div class="header-leclerc">
+                    <h3>Hôte de caisse et hôte d'accueil</h3>
+                    <p><em>Leclerc : 04/2022 - 08/2023<br>Mazères-Lezons (64) - France</em></p>                       
+                </div>
+                <div class="content-leclerc">
+                    <div class="hote-caisse">
+                        <p><strong>Hôte de caisse</strong></p>
+                        <ul>
+                            <li>En charge de l'encaissement des clients.</li>
+                        </ul>
                     </div>
-                    <div class="content_leclerc">
-                        <div class="hote_caisse">
-                            <p><strong>Hôte de caisse</strong></p>
-                            <ul>
-                                <li>En charge de l'encaissement des clients.</li>
-                            </ul>
-                        </div>
-                        <div class="hote_accueil">
-                            <p><strong>Hôte d'accueil</strong></p>
-                            <ul>
-                                <li>En charge de répondre aux divers besoins des clients.</li>
-                            </ul>
-                        </div>
+                    <div class="hote-accueil">
+                        <p><strong>Hôte d'accueil</strong></p>
+                        <ul>
+                            <li>En charge de répondre aux divers besoins des clients.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="parcours" id="vie_associative">
+        <section class="vie-associative" id="vie_associative">
             <h2>Engagement associatif</h2>
-            <div class="suboxes_engagement_associatif">
-                <div class="box_bde">
-                    <img src="img/logo_bde.webp" alt="Logo BDE" class="logo_bde">
-                    <div class="header_bde">
-                       <h3>Bureau Des Étudiants</h3>
-                        <p><em>Enseirb-Matmeca : 04/2024 - 04/2025<br>Talence (33) - France</em></p>            
+            <div class="box-bde">
+                <div class="header-bde">
+                    <div class="header-text-bde">
+                        <h3>Bureau Des Étudiants</h3>
+                        <p><em>Enseirb-Matmeca : 04/2024 - 04/2025<br>Talence (33) - France</em></p>   
                     </div>
-                    <div class="content_bde">
-                        <div class="respo_part">
-                            <p><strong>Responsable des partenariats</strong></p>
-                            <ul>
-                                <li>Contacter des potentiels partenaires.</li>
-                                <li>Négocier des contrats.</li>
-                                <li>Gestion de textiles et de goodies du BDE.</li>
-                                <li>Gestion des activités organisées par le partenaire.</li>
-                                <li>Gestion de différents entre le partenaire et le BDE.</li>
-                                <li>Organisation d'évènnements tel que le week-end d'intégration regroupant 500 personnes.</li>
-                            </ul>
-                        </div>
-                        <div class="respo_bar">
-                            <p><strong>Responsable bar</strong></p>
-                            <ul>
-                                <li>Gestion d'une équipe de cinq personnes.</li>
-                                <li>Préparation des boissons lors d'évènnements organisés.</li>
-                                <li>Gestion des stocks du BDE.</li>
-                            </ul>
-                        </div>
+                    <img src="img/logo_bde.webp" alt="Logo BDE" class="logo-bde">         
+                </div>
+                <div class="content-bde">
+                    <div class="respo-part">
+                        <p><strong>Responsable des partenariats</strong></p>
+                        <ul>
+                            <li>Contacter des potentiels partenaires.</li>
+                            <li>Négocier des contrats.</li>
+                            <li>Gestion de textiles et de goodies du BDE.</li>
+                            <li>Gestion des activités organisées par le partenaire.</li>
+                            <li>Gestion de différents entre le partenaire et le BDE.</li>
+                            <li>Organisation d'évènnements tel que le week-end d'intégration regroupant 500 personnes.</li>
+                        </ul>
+                    </div>
+                    <div class="respo-bar">
+                        <p><strong>Responsable bar</strong></p>
+                        <ul>
+                            <li>Gestion d'une équipe de cinq personnes.</li>
+                            <li>Préparation des boissons lors d'évènnements organisés.</li>
+                            <li>Gestion des stocks du BDE.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box_bae">
-                    <img src="img/logo_bae.png" alt="Logo BAE" class="logo_bae">
-                    <div class="header_bae">
-                       <h3>Bureau Des Alternants Étudiants</h3>
+            </div>
+            <div class="box-bae">
+                <div class="header-bae">
+                    <div class="header-text-bae">
+                        <h3>Bureau Des Alternants Étudiants</h3>
                         <p><em>Enseirb-Matmeca : 04/2024 - 04/2025<br>Talence (33) - France</em></p>         
                     </div>
-                    <div class="content_bae">
-                        <div class="vice_tresorier">
-                            <p><strong>Vice trésorier</strong></p>
-                            <ul>
-                                <li>Gestion de la trésorerie de l'association : compte bancaire et caisse.</li>
-                                <li>Gestion prévisionnelle des achats et ventes pour des évènnements regroupant jusqu'à 400 personnes.</li>
-                            </ul>
-                        </div>
+                    <img src="img/logo_bae.png" alt="Logo BAE" class="logo-bae">
+                </div>
+                <div class="content-bae">
+                    <div class="vice-tresorier">
+                        <p><strong>Vice trésorier</strong></p>
+                        <ul>
+                            <li>Gestion de la trésorerie de l'association : compte bancaire et caisse.</li>
+                            <li>Gestion prévisionnelle des achats et ventes pour des évènnements regroupant jusqu'à 400 personnes.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box_oeno">
-                    <img src="img/logo_oeno.png" alt="Logo OENO" class="logo_oeno">
-                    <div class="header_oeno">
-                       <h3>Club Oenologie</h3>
+            </div>
+            <div class="box-oeno">
+                <div class="header-oeno">
+                    <div class="header-text-oeno">
+                        <h3>Club Oenologie</h3>
                         <p><em>Enseirb-Matmeca : 04/2024 - 04/2025<br>Talence (33) - France</em></p>         
                     </div>
-                    <div class="content_oeno">
-                        <div class="tresorier">
-                            <p><strong>Trésorier</strong></p>
-                            <ul>
-                                <li>Gestion de la trésorerie du club.</li>
-                                <li>Gestion prévisionnelle des évènnements organisés : soirée Bar À Vin, dégustation avec des producteurs, visite de domaines.</li>
-                            </ul>
-                        </div>
+                     <img src="img/logo_oeno.png" alt="Logo OENO" class="logo-oeno">
+                </div>
+               
+                <div class="content-oeno">
+                    <div class="tresorier">
+                        <p><strong>Trésorier</strong></p>
+                        <ul>
+                            <li>Gestion de la trésorerie du club.</li>
+                            <li>Gestion prévisionnelle des évènnements organisés : soirée Bar À Vin, dégustation avec des producteurs, visite de domaines.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="parcours" id="projets">
+        <section class="projets" id="projets">
             <h2>Projets</h2>
-            <div class="suboxes_projets">
-                <div class="box_battleship">
-                    <div class="header_battleship">
-                        <div class="logos">
-                            <img src="img/langage_c.png" alt="Langage C" class="langage_c">
-                        </div>
-                        <h3>Conception d'une bataille navale en ligne de commande</h3>
-                        <p><em>Enseirb-Matmeca : Projet de première année</em></p>
+            <div class="box-battleship">
+                <div class="header-battleship">
+                    <div class="logos">
+                        <img src="img/langage_c.png" alt="Langage C" class="langage-c">
                     </div>
-                    <div class="content_battleship">
-                        <p><strong>Objectifs du projet</strong></p>
-                        <p>L'objectif de ce projet est de concevoir une battaille navale
-                            dans un terminal afin de pouvoir jouer contre un ordinateur.
-                            Le projet doit permettre l'affichage d'une grille de jeu, l'affichage
-                            des bateaux, les points de vies de chacun des bateaux, le status de chacun des
-                            bateaux et le nombre de bateaux restant.
-                        </p>
-                        <p><strong>Notions utilisées du langage C</strong></p>
-                        <ul>
-                            <li>Manipulation de tableaux d'entiers.</li>
-                            <li>Manipulation de chaînes de caractères.</li>
-                            <li>Manipulation de nombres et de leur représentation.</li>
-                            <li>Manipulation de pointeurs.</li>
-                            <li>Manipulation de structures.</li>
-                        </ul>
-                        <p class="github-link">
-                            <a href="https://github.com/anevelesbats/battleship" target="_blank">
-                                <img src="img/github.png" alt="GitHub">
-                                Dépôt GitHub
-                            </a>
-                        </p>
-                    </div>
+                    <h3>Conception d'une bataille navale en ligne de commande</h3>
+                    <p><em>Enseirb-Matmeca : Projet de première année</em></p>
                 </div>
-                <div class="box_ads">
-                    <div class="header_ads">
-                        <div class="logos">
-                            <img src="img/logo_ads.jpg" alt="ADS" class="ads">
-                        </div>                        
-                        <h3>Simulation d'un système de radiocommunications</h3>
-                        <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
-                    </div>
-                    <div class="content_ads">
-                        <p><strong>Objectifs du projet</strong></p>
-                        <p>Le projet a pour objectif d’initier à la simulation d’un système 
-                            d'émission-réception de télécommunication mettant en œuvre une modulation QPSK. 
-                            <br>
-                            La chaîne est constituée de composants RF prédéfinis (amplificateurs, mélangeurs, 
-                            modulateurs, filtres, oscillateurs, antennes, canal de propagation…)
-                        </p>
-                        <p><strong>Notions utilisées</strong></p>
-                        <ul>
-                            <li>Modulation QPSK (Quadrature Phase Shift Keying)</li>
-                            <li>Filtre en racine de cosinus surélevé (Raised Cosine Filter)</li>
-                            <li>Chaîne RF émission–réception</li>
-                            <li>Mélangeur RF / IF (Mixer)</li>
-                            <li>Amplificateur de puissance (PA) et amplificateur faible bruit (LNA)</li>
-                            <li>Non-linéarité et point de compression 1 dB (P1dB)</li>
-                            <li>Canal de propagation GSM (pertes, atténuation, déphasage, retard)</li>
-                            <li>Constellation et diagramme de l’œil</li>
-                            <li>Taux d’erreur binaire (BER)</li>
-                        </ul>
-                        <p>
-                            <a href="documents/TP_ADS_Filter_Antoine_Neve--Lesbats.pdf" target="_blank" class="btn-link">Voir le rapport PDF</a>
-                        </p>
-                    </div>
+                <div class="content-battleship">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>L'objectif de ce projet est de concevoir une battaille navale
+                        dans un terminal afin de pouvoir jouer contre un ordinateur.
+                        Le projet doit permettre l'affichage d'une grille de jeu, l'affichage
+                        des bateaux, les points de vies de chacun des bateaux, le status de chacun des
+                        bateaux et le nombre de bateaux restant.
+                    </p>
+                    <p><strong>Notions utilisées du langage C</strong></p>
+                    <ul>
+                        <li>Manipulation de tableaux d'entiers.</li>
+                        <li>Manipulation de chaînes de caractères.</li>
+                        <li>Manipulation de nombres et de leur représentation.</li>
+                        <li>Manipulation de pointeurs.</li>
+                        <li>Manipulation de structures.</li>
+                    </ul>
+                    <p class="github-link">
+                        <a href="https://github.com/anevelesbats/battleship" target="_blank">
+                            <img src="img/github.png" alt="GitHub">
+                            Dépôt GitHub
+                        </a>
+                    </p>
                 </div>
-                <div class="box_messagerie">
-                    <div class="header_messagerie">
-                        <div class="logos">
-                            <img src="img/langage_c.png" alt="Langage C" class="langage_c">
-                        </div>
-                        <h3>Conception d'un système de messagerie local entre deux terminaux</h3>
-                        <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
-                    </div>
-                    <div class="content_messagerie">
-                        <p><strong>Objectifs du projet</strong></p>
-                        <p>L'objectif de ce projet est d'implémenter un chat. Le projet sera basé sur le principe du
-                            client/“serveur”. Il y aura ainsi : un processus par client souhaitant utiliser le chat et 
-                            un processus comme contrôleur/répartiteur (serveur) pour
-                            rediriger les communications entre les différents clients.
-                        </p>
-                        <p><strong>Notions utilisées</strong></p>
-                        <ul>
-                            <li>Manipulation de processus : fork().</li>
-                            <li>Manipulation de fichiers avec une gestion des droits d'accès.</li>
-                            <li>Manipulation des tubes (pipe) et des signaux.</li>
-                        </ul>
-                        <p class="github-link">
-                            <a href="https://github.com/anevelesbats/chat" target="_blank">
-                                <img src="img/github.png" alt="GitHub">
-                                Dépôt GitHub
-                            </a>
-                        </p>
-                    </div>
+            </div>
+            <div class="box-ads">
+                <div class="header-ads">
+                    <div class="logos">
+                        <img src="img/logo_ads.jpg" alt="ADS" class="ads">
+                    </div>                        
+                    <h3>Simulation d'un système de radiocommunications</h3>
+                    <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
                 </div>
-                <div class="box_mediatheque"> 
-                    <div class="header_mediatheque">
-                        <div class="logos">
-                            <img src="img/langage_c++.png" alt="Langage C++" class="langage_cpp"> 
-                        </div>                        
-                        <h3>Conception d'une médiathèque en ligne de commande</h3>
-                        <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
-                    </div>
-                    <div class="content_mediatheque">
-                        <p><strong>Objectifs du projet</strong></p>
-                        <p>L'objectif  du  projet  est  de  développer  une  application en C++ permettant la 
-                            gestion d'une médiathèque en appliquant les principes de la programmation orientée objet. 
-                            L'application doit offrir des fonctionnalités telles que l'ajout, la suppression, la consultation et 
-                            la  recherche  de  ressources  (livres,  CD,  DVD,  revues,  etc.).  <br> Elle  permet  également  la 
-                            sauvegarde  et  le  chargement  des  données,  ainsi  que  la  gestion  des  emprunts  et 
-                            réservations. <br> Le projet inclut une extension pour la gestion multi-utilisateurs avec des droits 
-                            différenciés entre administrateurs et clients.
-                        </p>
-                        <p><strong>Notions utilisées</strong></p>
-                        <ul>
-                            <li>Classes et objets : définition de types.</li>
-                            <li>Encapsulation (<code>public</code> / <code>private</code> / <code>protected</code>) : séparation interface et implémentation.</li>
-                            <li>Héritage : classes dérivées.</li>
-                            <li>Polymorphisme et fonctions virtuelles : appels dynamiques via pointeurs et références de base.</li>
-                            <li>Classes abstraites et méthodes virtuelles pures : base commune non instanciable.</li>
-                            <li>Constructeurs et destructeurs — initialisation et nettoyage des objets.</li>
-                            <li>Séparation header et source : <code>.hpp</code> pour interfaces et <code>.cpp</code> pour implémentations.</li>
-                            <li>Pointeurs et références : gestion des relations entre objets (passage et stockage).</li>
-                            <li>Conteneurs STL : stockage des collections (ressources, utilisateurs).</li>
-                        </ul>
-                        <p class="github-link">
-                            <a href="https://github.com/anevelesbats/mediatheque" target="_blank">
-                                <img src="img/github.png" alt="GitHub">
-                                Dépôt GitHub
-                            </a>
-                        </p>
-                    </div>
+                <div class="content-ads">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>Le projet a pour objectif d’initier à la simulation d’un système 
+                        d'émission-réception de télécommunication mettant en œuvre une modulation QPSK. 
+                        <br>
+                        La chaîne est constituée de composants RF prédéfinis (amplificateurs, mélangeurs, 
+                        modulateurs, filtres, oscillateurs, antennes, canal de propagation…)
+                    </p>
+                    <p><strong>Notions utilisées</strong></p>
+                    <ul>
+                        <li>Modulation QPSK (Quadrature Phase Shift Keying)</li>
+                        <li>Filtre en racine de cosinus surélevé (Raised Cosine Filter)</li>
+                        <li>Chaîne RF émission–réception</li>
+                        <li>Mélangeur RF / IF (Mixer)</li>
+                        <li>Amplificateur de puissance (PA) et amplificateur faible bruit (LNA)</li>
+                        <li>Non-linéarité et point de compression 1 dB (P1dB)</li>
+                        <li>Canal de propagation GSM (pertes, atténuation, déphasage, retard)</li>
+                        <li>Constellation et diagramme de l’œil</li>
+                        <li>Taux d’erreur binaire (BER)</li>
+                    </ul>
+                    <p>
+                        <a href="documents/TP_ADS_Filter_Antoine_Neve--Lesbats.pdf" target="_blank" class="btn-link">Voir le rapport PDF</a>
+                    </p>
                 </div>
-                <div class="box_processeur">
-                    <div class="header_processeur">
-                        <div class="logos">
-                            <img src="img/logo_vhdl.png" alt="VHDL" class="vhdl"> 
-                            <img src="img/logo_assembleur_v2.png" alt="ASM" class="asm">
-                        </div>                        
-                        <h3>Conception d'un processeur avec jeu d'instructions</h3>
-                        <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
+            </div>
+            <div class="box-messagerie">
+                <div class="header-messagerie">
+                    <div class="logos">
+                        <img src="img/langage_c.png" alt="Langage C" class="langage-c">
                     </div>
-                    <div class="content_processeur">
-                        <p><strong>Objectifs du projet</strong></p>
-                        <p>L'objectif de ce projet est de concevoir un processeur simple 
-                            en VHDL avec un jeu d'instructions basique. Le processeur doit être capable 
-                            d'exécuter des instructions arithmétiques, logiques et de contrôle de flux. 
-                            Le projet inclut la conception de l'unité de contrôle, de l'unité arithmétique et logique (ALU), 
-                            des registres et de la mémoire. <br> Une interface de test doit également être développée pour 
-                            simuler et valider le fonctionnement du processeur.
-                        </p>
-                        <p><strong>Notions utilisées</strong></p>
-                        <ul>
-                            <li>Conception matérielle en VHDL : description du matériel.</li>
-                            <li>Architecture de processeur : composants et organisation.</li>
-                            <li>Jeu d'instructions : opérations supportées.</li>
-                            <li>Unité de contrôle : gestion du flux d'instructions.</li>
-                            <li>Unité arithmétique et logique (ALU) : opérations arithmétiques et logiques.</li>
-                            <li>Registres et mémoire : stockage des données et instructions.</li>
-                            <li>Simulation et test : validation du fonctionnement.</li>
-                        </ul>
-                    </div>
+                    <h3>Conception d'un système de messagerie local entre deux terminaux</h3>
+                    <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
                 </div>
-                <div class="box_robotique">
-                    <div class="header_robotique">
-                        <div class="logos">
-                            <img src="img/langage_c++.png" alt="Langage C++" class="langage_cpp"> 
-                            <img src="img/ros.png" alt="Ros" class="ros">
-                        </div>                       
-                        <h3>Manipulation d'objet avec le bras robotique XARM6</h3>
-                        <p><em>Enseirb-Matmeca : Projet de troisième année</em></p>
-                    </div>
-                    <div class="content_robotique">
-                        <p><strong>Project en cours...</strong></p>
-                    </div>
+                <div class="content-messagerie">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>L'objectif de ce projet est d'implémenter un chat. Le projet sera basé sur le principe du
+                        client/“serveur”. Il y aura ainsi : un processus par client souhaitant utiliser le chat et 
+                        un processus comme contrôleur/répartiteur (serveur) pour
+                        rediriger les communications entre les différents clients.
+                    </p>
+                    <p><strong>Notions utilisées</strong></p>
+                    <ul>
+                        <li>Manipulation de processus : fork().</li>
+                        <li>Manipulation de fichiers avec une gestion des droits d'accès.</li>
+                        <li>Manipulation des tubes (pipe) et des signaux.</li>
+                    </ul>
+                    <p class="github-link">
+                        <a href="https://github.com/anevelesbats/chat" target="_blank">
+                            <img src="img/github.png" alt="GitHub">
+                            Dépôt GitHub
+                        </a>
+                    </p>
                 </div>
-                <div class="box_website">
-                    <div class="header_website">
-                        <div class="logos">
-                            <img src="img/logo_html_css.webp" alt="Html/Css" class="html_css">
-                        </div>
-                        <h3>Création d'un site WEB</h3>                        
-                        <p><em>Projet personnel</em></p>
+            </div>
+            <div class="box-mediatheque"> 
+                <div class="header-mediatheque">
+                    <div class="logos">
+                        <img src="img/langage_c++.png" alt="Langage C++" class="langage-cpp"> 
+                    </div>                        
+                    <h3>Conception d'une médiathèque en ligne de commande</h3>
+                    <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
+                </div>
+                <div class="content-mediatheque">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>L'objectif  du  projet  est  de  développer  une  application en C++ permettant la 
+                        gestion d'une médiathèque en appliquant les principes de la programmation orientée objet. 
+                        L'application doit offrir des fonctionnalités telles que l'ajout, la suppression, la consultation et 
+                        la  recherche  de  ressources  (livres,  CD,  DVD,  revues,  etc.).  <br> Elle  permet  également  la 
+                        sauvegarde  et  le  chargement  des  données,  ainsi  que  la  gestion  des  emprunts  et 
+                        réservations. <br> Le projet inclut une extension pour la gestion multi-utilisateurs avec des droits 
+                        différenciés entre administrateurs et clients.
+                    </p>
+                    <p><strong>Notions utilisées</strong></p>
+                    <ul>
+                        <li>Classes et objets : définition de types.</li>
+                        <li>Encapsulation (<code>public</code> / <code>private</code> / <code>protected</code>) : séparation interface et implémentation.</li>
+                        <li>Héritage : classes dérivées.</li>
+                        <li>Polymorphisme et fonctions virtuelles : appels dynamiques via pointeurs et références de base.</li>
+                        <li>Classes abstraites et méthodes virtuelles pures : base commune non instanciable.</li>
+                        <li>Constructeurs et destructeurs — initialisation et nettoyage des objets.</li>
+                        <li>Séparation header et source : <code>.hpp</code> pour interfaces et <code>.cpp</code> pour implémentations.</li>
+                        <li>Pointeurs et références : gestion des relations entre objets (passage et stockage).</li>
+                        <li>Conteneurs STL : stockage des collections (ressources, utilisateurs).</li>
+                    </ul>
+                    <p class="github-link">
+                        <a href="https://github.com/anevelesbats/mediatheque" target="_blank">
+                            <img src="img/github.png" alt="GitHub">
+                            Dépôt GitHub
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="box-processeur">
+                <div class="header-processeur">
+                    <div class="logos">
+                        <img src="img/logo_vhdl.png" alt="VHDL" class="vhdl"> 
+                        <img src="img/logo_assembleur_v2.png" alt="ASM" class="asm">
+                    </div>                        
+                    <h3>Conception d'un processeur avec jeu d'instructions</h3>
+                    <p><em>Enseirb-Matmeca : Projet de deuxième année</em></p>
+                </div>
+                <div class="content-processeur">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>L'objectif de ce projet est de concevoir un processeur simple 
+                        en VHDL avec un jeu d'instructions basique. Le processeur doit être capable 
+                        d'exécuter des instructions arithmétiques, logiques et de contrôle de flux. 
+                        Le projet inclut la conception de l'unité de contrôle, de l'unité arithmétique et logique (ALU), 
+                        des registres et de la mémoire. <br> Une interface de test doit également être développée pour 
+                        simuler et valider le fonctionnement du processeur.
+                    </p>
+                    <p><strong>Notions utilisées</strong></p>
+                    <ul>
+                        <li>Conception matérielle en VHDL : description du matériel.</li>
+                        <li>Architecture de processeur : composants et organisation.</li>
+                        <li>Jeu d'instructions : opérations supportées.</li>
+                        <li>Unité de contrôle : gestion du flux d'instructions.</li>
+                        <li>Unité arithmétique et logique (ALU) : opérations arithmétiques et logiques.</li>
+                        <li>Registres et mémoire : stockage des données et instructions.</li>
+                        <li>Simulation et test : validation du fonctionnement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-robotique">
+                <div class="header-robotique">
+                    <div class="logos">
+                        <img src="img/langage_c++.png" alt="Langage C++" class="langage-cpp"> 
+                        <img src="img/ros.png" alt="Ros" class="ros">
+                    </div>                       
+                    <h3>Manipulation d'objet avec le bras robotique XARM6</h3>
+                    <p><em>Enseirb-Matmeca : Projet de troisième année</em></p>
+                </div>
+                <div class="content-robotique">
+                    <p><strong>Project en cours...</strong></p>
+                </div>
+            </div>
+            <div class="box-website">
+                <div class="header-website">
+                    <div class="logos">
+                        <img src="img/logo_html_css.webp" alt="Html/Css" class="html-css">
                     </div>
-                    <div class="content_website">
-                        <p>Développement d’un site web personnel utilisant <strong>HTML et CSS</strong> pour mettre en 
-                            avant mon parcours académique et professionnel, mes projets et activités associatives.
-                        </p>
-                    </div>
+                    <h3>Création d'un site WEB</h3>                        
+                    <p><em>Projet personnel</em></p>
+                </div>
+                <div class="content-website">
+                    <p>Développement d’un site web personnel utilisant <strong>HTML et CSS</strong> pour mettre en 
+                        avant mon parcours académique et professionnel, mes projets et activités associatives.
+                    </p>
                 </div>
             </div>
         </section>

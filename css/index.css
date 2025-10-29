@@ -1,3 +1,9 @@
+:root{
+    --primary-color: #a8d0e6;
+    --secondary-color: #3F88C5;
+    --background-color: #F5F6FA; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +11,12 @@
 }
 
 body {
-    background-color: rgb(213, 206, 206);
+    background-color: var(--background-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
 }
 nav{
     margin-bottom: 0;
-}
-
-h1 {
-    background-color: #5C7990;
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    padding: 1em 0;
-    margin: 0;
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.5);
 }
 
 h2 {
@@ -43,19 +39,6 @@ a {
     text-decoration: none;
 }
 
-.parcours {
-    border: 2px solid rgb(53, 114, 161);
-    border-radius: 10px;
-    display: block; 
-    width: 70%;
-    margin: 1em auto;
-    padding: 0em 1em;
-}
-
-.gradient-background {
-    min-height: calc(100vh - 3.8em);
-    padding: 1em 2em;
-}
 
 .lang-switch {
   margin-left: auto; 

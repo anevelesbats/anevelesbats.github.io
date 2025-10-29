@@ -1,37 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  const links = document.querySelectorAll('.nav-links a');
-  const homeLink = document.querySelector('.logo'); // le lien maison
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  const navbarHome = document.querySelector('.navbar-home');
+  const photo = document.querySelector('.my-cv-picture-nav');
+  const name = document.querySelector('.nav-name');
 
-  // Ouvre/ferme
-  toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    toggleButton.classList.toggle('active');
-  });
-
-  // Ferme après clic
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
-      toggleButton.classList.remove('active');
-    });
-  });
-
-  // ✅ Scroll au header avec offset sur MOBILE
-  if (homeLink) {
-    homeLink.addEventListener('click', (e) => {
-      if (window.matchMedia('(max-width: 768px)').matches) {
-        e.preventDefault();
-        const header = document.querySelector('header');
-        const navH = document.querySelector('.navbar')?.offsetHeight || 60;
-        const y = header.getBoundingClientRect().top + window.pageYOffset - navH;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-
-        // ferme le menu si ouvert
-        navLinks.classList.remove('show');
-        toggleButton.classList.remove('active');
-      }
-    });
+  if (window.scrollY > 200) {
+    navbar.classList.add('shrink');
+    navbarHome.classList.add('visible');
+    photo.classList.add('visible');
+    name.classList.add('visible');
+  } else {
+    navbar.classList.remove('shrink');
+    navbarHome.classList.remove('visible');
+    photo.classList.remove('visible');
+    name.classList.remove('visible');
   }
+});
+
+document.querySelector('.my-cv-picture-nav').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
