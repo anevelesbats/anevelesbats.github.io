@@ -24,48 +24,12 @@
     cursor: pointer;
 }
 
-.logo_bde {
-    position: absolute;
-    top: 0.1em;   
-    right: 0.1em;  
-    width: 120px;  
-    height: auto;  
+.logo-bde, .logo-oeno, .logo-bae {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-right: 800px;
 }
-
-.logo_oeno {
-    position: absolute;
-    top: -0.5em;   
-    right: -1em;  
-    width: 120px;  
-    height: auto;  
-}
-
-.logo_bae {
-    position: absolute;
-    top: 0.1em;   
-    right: 0.1em;  
-    width: 120px;  
-    height: auto;  
-}
-@media screen and (max-width: 768px) {
-
-    .logo_bde,
-  .logo_bae {
-    max-width: 30px;   
-    height: auto;
-    display: block;
-    margin: 0.5em auto !important; 
-    margin-top: 0em !important;
-  }
-  .logo_oeno {
-    max-width: 50px;   
-    height: auto;
-    display: block;
-    margin: 0.5em auto !important; 
-    margin-right: 0.7em !important;
-  }
-}
-
 
 .logos {
     float: right;
@@ -80,13 +44,13 @@
     transform: scale(1.1);
 }
 
-.langage_c {
+.langage-c {
     width: 30px;  
     height: auto;  
 }
 
 
-.langage_cpp{
+.langage-cpp{
     width: 30px;
     height: auto;
 }
@@ -111,7 +75,7 @@
     height: auto;
 }
 
-.html_css{ 
+.html-css{ 
     width: 50px;
     height: auto;
 }
@@ -125,7 +89,7 @@
   align-items: center;
   gap: 0.5em;
   text-decoration: none;
-  background-color: #4b5a6e;
+  background-color: var(--secondary-color);
   color: white;
   padding: 0.4em 0.8em;
   border-radius: 6px;
@@ -134,7 +98,7 @@
 }
 
 .github-link a:hover {
-  background-color: #333;
+  background-color: #64b0d8;
   transform: translateY(-1px);
 }
 
@@ -145,7 +109,7 @@
 
 .btn-link {
   display: inline-block;
-  background-color: #4b5a6e; 
+  background-color: var(--secondary-color); 
   color: #fff;
   font-weight: 600;
   padding: 0.4em 0.8em;
@@ -156,6 +120,17 @@
 }
 
 .btn-link:hover {
-  background-color: #333; 
+  background-color: #64b0d8; 
   transform: translateY(-1px);
+}
+
+.corner-image {
+  position: absolute;
+  top: 10px;       
+  right: -180px;    
+  width: 500px;    
+  height: auto;
+  opacity: 0.9;  
+  transform: rotate(45deg);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }

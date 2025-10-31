@@ -1,138 +1,74 @@
-.suboxes_projets {
+.projets{
     display: flex;
     flex-direction: column;
-    gap: 2em; 
-    margin-top: 1em;
-    margin-bottom: 1em;
+    gap: 34px;
+    padding: 24px 10px;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top: 4px solid var(--secondary-color);
 }
 
-.suboxes_projets ul {
-    list-style-type: square;
+.projets h2{    
+    color: var(--secondary-color);
 }
 
-.box_battleship {
+.projets h3{
+    text-decoration: underline;
+}
+
+.box-battleship, .box-messagerie, .box-processeur, 
+.box-website
+{
     position: relative;
     display: flex;
     flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
     padding: 1.5em 2em;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     margin-right: 30%;
-    background-color: transparent;
+    background-color: var(--primary-color);
     text-align: left;
+    border-radius: 12px;
 }
 
-.box_ads {
+.box-mediatheque, .box-ads, .box-robotique{
     position: relative;
     display: flex;
     flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
     padding: 1.5em 2em;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     margin-left: 30%;
-    background-color: transparent;
+    background-color: var(--primary-color);
     text-align: left;
+    border-radius: 12px;
 }
 
-.box_messagerie {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-right: 30%;
-    background-color: transparent;
-    text-align: left;
-}
 
-.box_mediatheque {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 30%;
-    background-color: transparent;
-    text-align: left;
-}
-
-.box_processeur {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-right: 30%;
-    background-color: transparent;
-    text-align: left;
-}
-
-.box_robotique {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 30%;
-    background-color: transparent;
-    text-align: left;
-}
-
-.box_website {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-right: 30%;
-    background-color: transparent;
-    text-align: left;
-}
-
-.header_battleship, .header_ads, .header_messagerie, .header_mediatheque,
-.header_processeur, .header_robotique, .header_website
+.header-battleship, .header-ads, .header-messagerie, .header-mediatheque,
+.header-processeur, .header-robotique, .header-website
 {
 
     text-align: left;
 }
 
-.header_battleship h3, .header_ads h3, .header_messagerie h3, .header_mediatheque h3, 
-.header_processeur h3, .header_robotique h3, .header_website h3
+.header-battleship h3, .header-ads h3, .header-messagerie h3, .header-mediatheque h3, 
+.header-processeur h3, .header-robotique h3, .header-website h3
 {
     margin: 0;
     font-size: 1.3em;
     color: black;
 }
 
-.header_battleship p, .header_ads p, .header_messagerie p, .header_mediatheque p, 
-.header_processeur p, .header_robotique p, .header_website p
+.header-battleship p, .header-ads p, .header-messagerie p, .header-mediatheque p, 
+.header-processeur p, .header-robotique p, .header-website p
 {
     font-style: italic;
     color: rgba(0, 0, 0, 1);
     margin-top: 0.3em;
 }
 
-.content_battleship, .content_ads, .content_messagerie, .content_mediatheque, 
-.content_processeur, .content_robotique, .content_website
+.content-battleship, .content-ads, .content-messagerie, .content-mediatheque, 
+.content-processeur, .content-robotique, .content-website
 {
     display: flex;
     flex-direction: column;
@@ -140,66 +76,11 @@
     align-items: stretch;
 }
 
-.content_battleship p, .content_ads p, .content_messagerie p, .content_mediatheque p, 
-.content_processeur p, .content_robotique p, .content_website p
+.content-battleship p, .content-ads p, .content-messagerie p, .content-mediatheque p, 
+.content-processeur p, .content-robotique p, .content-website p
 {
     text-align: justify;
     text-justify: inter-word;
 }
 
-@media screen and (max-width: 768px) {
-  .content_battleship,
-  .content_ads,
-  .content_messagerie,
-  .content_mediatheque,
-  .content_processeur,
-  .content_robotique,
-  .content_website {
-    display: flex;
-    flex-direction: column;
-    gap: 1em; /* petit espace entre les sous-sections */
-    width: 100%;
-    display: block !important;
-  }
 
-  .box_battleship,
-  .box_ads,
-  .box_messagerie,
-  .box_mediatheque,
-  .box_processeur,
-  .box_robotique,
-  .box_website {
-    width: 100% ;
-    border-radius: 8px;
-    padding: 1em;
-    box-sizing: border-box;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-  .box_battleship p,
-  .box_ads p,
-  .box_messagerie p,
-  .box_mediatheque p,
-  .box_processeur p,
-  .box_robotique p,
-  .box_website p{
-      word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-  .box_battleship li,
-  .box_ads li,
-  .box_messagerie li,
-  .box_mediatheque li,
-  .box_processeur li,
-  .box_robotique li,
-  .box_website li{
-      word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-
-}

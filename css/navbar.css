@@ -1,118 +1,107 @@
+/* === NAVBAR INITIALE === */
 .navbar {
-    background-color: #5C7990;
-    padding: 0.5em 1em;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    align-items: center;
-    border-bottom: none;
-
-}
-
-.navbar + header {
-  margin-top: -10px; /* 👈 retire le petit espace résiduel */
-}
-
-.nav-links {
-  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
   display: flex;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
-}
-.nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 2em;
-    margin: 0;
-    padding: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+  z-index: 1000;
+  gap: auto;
+
 }
 
-
-.nav-links a {
-    color: white;
-    font-weight: bold;
+.navbar-links {
+  display: flex;
+  font-weight: 600;
+  gap: 40px;
 }
 
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.navbar .logo img {
-  height: 20px; 
-  width: auto;
-  margin-left: 1em;
-  filter: invert(1);
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8em;
+.navbar-links a {
   color: white;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  font-size: 1.1em;
+  
 }
-.menu-toggle.active {
-  transform: rotate(90deg);
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.lang {
+  font-size: 0.9em;
+  margin-left: 1em;
+}
+
+.navbar-home {
+  display: none;
+  align-items: center;
+  gap: 0.8em;
+  transition: opacity 0.4s ease;
 }
 
 .my-cv-picture-nav {
-  height: 45px;
-  width: auto;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  display: none; /* masquée par défaut */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+.my-cv-picture.in-navbar {
+  position: fixed;
+  top: 15px;         
+  left: 40px;      
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: none;
+  z-index: 2000;
+  background-color: transparent;
+  transform: translateY(0);
 }
 
-/* --- VERSION MOBILE --- */
-@media screen and (max-width: 768px) {
+.nav-name {
+  font-weight: 500;
+  font-size: 1.1em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.6s ease;
+}
+.nav-name.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
-  .navbar {
-    position: fixed;      
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;       
-    padding: 0 1rem;     
-  }
+.navbar.shrink {
+  justify-content: space-between;
+  padding: 0.7em 3em;
+  background-color: var(--secondary-color);
+}
 
-  body {
-    padding-top: 60px;   
-  }
+.navbar.shrink .navbar-home {
+  display: flex;
+  opacity: 1;
+}
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #5C7990;
-    position: absolute;
-    top: 60px;           
-    left: 0;
-    width: 65%;
-    padding: 1em;
-    gap: 1em;
-    text-align: left;
-    border-radius: 0 10px 10px 0;
-    box-shadow: 3px 0 8px rgba(0,0,0,0.3);
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  .nav-links.show { display: flex; opacity: 1; transform: translateX(0); }
+.navbar.shrink .navbar-links {
+  justify-content: flex-end;
+  gap: 1.5em;
+}
 
-  .nav-links li { width: 100%; }
-  .nav-links a { font-size: 1.1em; color: white; padding: 0.3em 0; width: 100%; text-align: left; }
-  .nav-links a:hover { background-color: rgba(255,255,255,0.1); }
+.navbar.shrink .navbar-links a {
+  font-weight: 500;
+}
 
-  .menu-toggle { display: block; font-size: 1.6em; color: white; background: none; border: none; padding: 0.3em 0.6em; }
-  .my-cv-picture-nav { display: block; height: 45px; width: auto; border-radius: 8px; }
-  .my-cv-picture { display: none; }
-  .lang-switch { margin-top: 1em; text-align: left; width: 100%; }
+.navbar,
+.navbar-home,
+.navbar-links a {
+  transition: all 0.3s ease;
 }

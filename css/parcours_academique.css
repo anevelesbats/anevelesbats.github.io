@@ -1,143 +1,65 @@
-.suboxes_parcours_academique {
+.parcours-academique {
     display: flex;
     flex-direction: column;
-    gap: 2em; 
-    margin-top: 1em;
-    margin-bottom: 1em;
+    gap: 34px;
+    padding: 24px 10px;
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top: 4px solid var(--secondary-color);
+    margin-top: 60px; 
 }
 
-.suboxes_parcours_academique ul {
-    list-style-type: square;
+
+.parcours-academique h2{    
+    color: var(--secondary-color);
 }
 
-.box_dut_geii {
+.parcours-academique h3{
+    text-decoration: underline;
+}
+
+.box-enseirb {
     display: flex;
     flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 4em;
-    background-color: transparent;
-    text-align: left;
+    padding: 0px 15px;
 }
 
-.box_enseirb {
+.box-dut {
     display: flex;
     flex-direction: column;
-    border-left: 4px solid rgba(53, 114, 161, 0.388);
-    border-top: 4px solid rgba(53, 114, 161, 0.388);
-    border-radius: 6px;
-    padding: 1.5em 2em;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    margin-left: 1em;
-    background-color: transparent;
-    text-align: left;
+    padding: 0px 40px;
 }
 
-.header_geii, .header_enseirb {
-    text-align: left;
-}
-
-.header_geii h3, .header_enseirb h3 {
-    margin: 0;
-    font-size: 1.3em;
-    color: black;
-}
-
-.header_geii p, .header_enseirb p {
-    font-style: italic;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 0.3em;
-}
-
-.content_geii, .content_enseirb {
+.content-enseirb, .content-dut{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 3em;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0px;
     align-items: stretch;
 }
 
-.cours_geii, .projets_geii, .cours_enseirb, .projets_enseirb, .certifications {
-    flex: 1;
-    background-color: transparent;
-    padding: 1em;
-    border-radius: 10px;
+.cours-enseirb, .projets-enseirb, .certifications, 
+.cours-dut, .projets-dut
+{
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
-}
-.cours_geii ul, .projets_geii ul, .cours_enseirb ul, .projets_enseirb ul, .certifications ul{
-    list-style-type: square;
-    margin-left: 1.5em;
-    width: 100%;         
-    word-wrap: break-word;
-    white-space: normal; 
+    min-width: 0;
+    padding: 10px 0px;
+    gap: 10px;
 }
 
-
-.cours_geii li, .projets_geii li, .cours_enseirb li, .projets_enseirb li, .certifications li{
-    line-height: 1.5em;
-    max-width: none;    
+.parcours-academique::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
 }
 
-
-@media (max-width: 800px) {
-    .content_geii {
-        flex-direction: column;
-        gap: 1em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-  .content_enseirb,
-  .content_geii
-   {
-    display: flex;
-    flex-direction: column;
-    gap: 1em; /* petit espace entre les sous-sections */
-    width: 100%;
-    display: block !important;
-  }
-
-  .cours_enseirb,
-  .projets_enseirb,
-  .certifications {
-    width: 100%;
-  }
-
-
-  .box_enseirb,
-  .box_dut_geii
-   {
-    width: 100% ;
-    border-radius: 8px;
-    padding: 1em;
-    box-sizing: border-box;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-  .box_enseirb p,
-  .box_dut_geii p
-  {
-      word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-    .box_enseirb li,
-  .box_dut_geii li
-  {
-      word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-  .content_academique div {
-    width: 100% !important;
-    margin: 0.5em 0;
-  }
-
-}
