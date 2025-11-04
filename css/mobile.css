@@ -221,6 +221,10 @@
         padding: 1.2em 1em;
     }
 
+    .box-battleship{
+        margin-bottom: 30px;
+    }
+
     .logos {
         justify-content: center;
     }
