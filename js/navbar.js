@@ -21,3 +21,19 @@ document.querySelector('.my-cv-picture-nav').addEventListener('click', function(
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+  const burger = document.getElementById('burger');
+  const menu = document.querySelector('.navbar-links');
+  const navLinks = document.querySelectorAll('.navbar-links a');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+    });
+  });

@@ -1,0 +1,272 @@
+@media screen and (max-width: 768px) {
+
+    body, html {
+        overflow-x: hidden;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    section {
+        margin: 0;
+        padding: 1.5em 1em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        text-decoration: none !important;
+    }
+    
+    ul {
+        margin-left: 1em;
+    }
+
+
+    /* Navbar */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 1.5em;
+    }
+
+    .navbar-links {
+        display: none; /* caché par défaut */
+        flex-direction: column;
+        background-color: rgba(63, 136, 197, 0.95);
+        justify-content: flex-start; 
+        align-items: center;      
+        padding-top: 120px;    
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        gap: 2em;
+        z-index: 2000;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+    }
+
+    .navbar.shrink .navbar-links {
+        justify-content: flex-start !important;
+        padding-top: 110px !important;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .navbar-links a {
+        font-size: 1.2em;
+        color: white;
+    }
+
+    /* Button */
+    .burger {
+        display: block;
+        width: 28px;
+        height: 21px;
+        position: relative;
+        cursor: pointer;
+        z-index: 3000;
+    }
+
+    .burger span {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 2px;
+        transition: 0.4s;
+    }
+
+    .burger span:nth-child(1) { top: 0; }
+    .burger span:nth-child(2) { top: 9px; }
+    .burger span:nth-child(3) { top: 18px; }
+
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+
+    /* Home */
+    .home {
+        height: auto;
+        padding-top: 120px;
+        gap: 30px;
+    }
+
+    .intro {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-cv-picture {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        width: 90%;
+        text-align: center;
+    }
+
+    .name h1 {
+        font-size: 1.8em;
+    }
+
+    .presentation {
+        width: 90%;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .corner-image {
+        display: none; 
+    }
+
+    /* Section */
+    .parcours-academique, .parcours-professionnel, 
+    .vie-associative, .projets
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0 15px;
+    }
+
+    .box-enseirb, .box-dut, .box-apprentissage, 
+    .box-leclerc, .box-stage, 
+    .box-bde, .box-bae
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-oeno{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Content */
+    .haut-enseirb,
+    .content-dut,
+    .content-bde,
+    .content-bae,
+    .content-oeno,
+    .content-apprentissage,
+    .content-stage,
+    .content-leclerc {
+        flex-direction: column;
+    }
+
+    .cours-enseirb,
+    .projets-enseirb,
+    .cours-dut,
+    .projets-dut,
+    .certifications,
+    .first-year,
+    .second-year,
+    .third-year,
+    .detection-armes,
+    .hote-caisse,
+    .hote-accueil,
+    .respo-part,
+    .respo-bar,
+    .vice-tresorier,
+    .tresorier {
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+    /* Associatif */
+    .header-bde,
+    .header-bae,
+    .header-oeno {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .logo-bde,
+    .logo-bae,
+    .logo-oeno {
+        width: 80px;
+        margin: 10px 0;
+    }
+
+    /* Projets */
+    .box-messagerie,
+    .box-processeur,
+    .box-website,
+    .box-mediatheque,
+    .box-ads,
+    .box-robotique,
+    .box-battleship {
+        margin: 0;
+        width: 100%;
+        padding: 1.2em 1em;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .logos img {
+        width: 40px;
+        height: auto;
+    }
+
+    .langage-cpp, .asm{
+        width: 30px !important;
+        height: auto;
+    }
+
+    .ros, .vhdl{
+        width: 50px !important;
+        height: auto;
+    }
+
+
+    .content-battleship p,
+    .content-ads p,
+    .content-messagerie p,
+    .content-mediatheque p,
+    .content-processeur p,
+    .content-robotique p,
+    .content-website p {
+        font-size: 0.95em;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.8em;
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-media img {
+        height: 22px;
+    }
+}
