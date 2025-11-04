@@ -26,15 +26,10 @@
     text-decoration: underline;
 }
 
-.box-enseirb {
+.box-enseirb, .box-dut{
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
-}
-.box-dut {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 40px;
 }
 
 
