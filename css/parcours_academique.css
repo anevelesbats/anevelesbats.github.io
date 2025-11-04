@@ -6,13 +6,20 @@
     box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-left: 30px;
     margin-right: 30px;
-    border-top: 4px solid var(--secondary-color);
-    margin-top: 60px; 
+    margin-top: 20px; 
 }
 
+.parcours-academique hr{
+    background-color: var(--secondary-color);
+    border: none;
+    height: 4px;
+    width: 95%;
+    margin: 0px auto;
+}
 
 .parcours-academique h2{    
     color: var(--secondary-color);
+    font-size: 28px;
 }
 
 .parcours-academique h3{
@@ -24,32 +31,53 @@
     flex-direction: column;
     padding: 0px 15px;
 }
-
 .box-dut {
     display: flex;
     flex-direction: column;
     padding: 0px 40px;
 }
 
-.content-enseirb, .content-dut{
+
+.content-enseirb{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 40px;
     padding: 20px 0px;
     align-items: stretch;
 }
 
-.cours-enseirb, .projets-enseirb, .certifications, 
-.cours-dut, .projets-dut
-{
-    flex: 1 1 0;
+.content-dut{
     display: flex;
-    flex-direction: column;
-    min-width: 0;
-    padding: 10px 0px;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px;
+    gap: 40px;
+    margin-bottom: 20px;
 }
+
+.haut-enseirb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cours-enseirb, .projets-enseirb, .cours-dut, .projets-dut{
+  flex: 1 1 48%; 
+  background-color: var(--background-color); 
+  border-left: 4px solid var(--primary-color);
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+
+.certifications {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 8px 20px;
+  border-left: 4px solid var(--primary-color);
+}
+
 
 .parcours-academique::before {
   content: "";

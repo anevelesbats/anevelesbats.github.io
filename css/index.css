@@ -39,6 +39,9 @@ a {
     text-decoration: none;
 }
 
+i {
+  margin-right: 8px;
+}
 
 .lang-switch {
   margin-left: auto; 
