@@ -59,6 +59,15 @@
     font-size: 48px;
 }
 
+html[lang="en"] .name p {
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+html[lang="en"]{
+    margin-top: 14px;
+}
+
 .name p {
     font-size: 20px;
     line-height: 1.6em;
@@ -66,8 +75,8 @@
 }
 
 .presentation{
-    width: 900px;
-    height: 160px;
+    width: 934px;
+    height: auto;
     gap: 20px;
     display: flex;
     flex-direction: row;
