@@ -24,22 +24,10 @@
     text-decoration: underline;
 }
 
-.box-apprentissage {
+.box-apprentissage, .box-stage, .box-leclerc {
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
-}
-
-.box-stage {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 40px;
-}
-
-.box-leclerc {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 65px;
 }
 
 .content-apprentissage, .content-stage, .content-leclerc{
