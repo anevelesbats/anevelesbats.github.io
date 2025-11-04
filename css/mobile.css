@@ -25,6 +25,18 @@
         margin-left: 1em;
     }
 
+    html[lang="en"] .name p {
+    font-size: 16px;
+    line-height: 1.4em;
+    }
+
+    html[lang="en"]{
+        margin-top: 14px;
+    }
+    html[lang="fr"] .name p{
+        font-size: 16px;
+        line-height: 1.4em;
+    }
 
     /* Navbar */
     .navbar {
