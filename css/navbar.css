@@ -43,7 +43,7 @@
 .navbar-home {
   display: none;
   align-items: center;
-  gap: 0.8em;
+  gap: 1em;
   transition: opacity 0.4s ease;
 }
 
@@ -82,12 +82,14 @@
 .nav-name.visible {
   opacity: 1;
   transform: translateX(0);
+  gap: 1em;
 }
 
 .navbar.shrink {
   justify-content: space-between;
   padding: 0.7em 3em;
   background-color: var(--secondary-color);
+  gap: 1em;
 }
 
 .navbar.shrink .navbar-home {
@@ -97,7 +99,7 @@
 
 .navbar.shrink .navbar-links {
   justify-content: flex-end;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .navbar.shrink .navbar-links a {
