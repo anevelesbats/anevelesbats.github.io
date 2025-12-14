@@ -286,4 +286,17 @@
     .social-media img {
         height: 22px;
     }
+
+    .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; 
+    aspect-ratio: 9 / 16;
+    margin: auto !important;
+    }
+
+    .video-container iframe {
+    width: 100%;
+    height: 100%;
+    }
 }
