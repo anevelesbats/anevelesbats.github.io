@@ -22,13 +22,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
-      - name: Inject build date
+
+      - name: Inject build metadata
         shell: bash
         run: |
-          BUILD_DATE=$(date +"%d %b %Y – %H:%M")
-          sed -i "s/__VERSION__/$BUILD_DATE/g" index.html
-    
+          SHORT_SHA="${GITHUB_SHA::7}"
+          BUILD_DATE="$(date +"%d/%m/%Y %H:%M")"
+          META="Build ${BUILD_DATE} • ${SHORT_SHA}"
+          # Utilise un séparateur '|' + échappe les caractères spéciaux pour sed
+          ESCAPED_META=$(printf '%s\n' "$META" | sed -e 's/[\/&]/\\&/g')
+          sed -i "s|__VERSION__|$ESCAPED_META|g" index.html
+          echo "Injected: $META"
+          grep -n "__VERSION__" index.html && (echo "Placeholder still present!" && exit 1) || true
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
