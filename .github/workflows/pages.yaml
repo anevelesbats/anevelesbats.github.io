@@ -23,10 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Inject version
+      - name: Inject build date
+        shell: bash
         run: |
-          VERSION=${GITHUB_SHA::7}
-          sed -i "s/__VERSION__/$VERSION/g" index.html
+          BUILD_DATE=$(date +"%d/%m/%Y – %H:%M")
+          sed -i "s/__VERSION__/$BUILD_DATE/g" index.html
     
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
