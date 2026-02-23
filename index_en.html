@@ -181,9 +181,17 @@
                     </div>
                     <div class="third-year">
                         <p><strong>Third year: standardization of RF SoC integration and testing</strong></p>
-                        <ul>
-                            <li>Work in progress...</li>
-                        </ul>
+                            <ul>
+                                <li>Design of a software architecture aimed at providing a generic,
+                                    abstract and user-friendly API</li>
+                                    <ul>
+                                        <li>Definition of a virtual memory mapping: association of a virtual address
+                                            with a functionality.</li>
+                                        <li>High-level commands oriented toward functionality (e.g., SetFrequency)</li>
+                                        <li>Low-level commands allowing direct access to registers (e.g., WriteRegister)</li>
+                                    </ul>
+                                <li>To be continued...</li>
+                            </ul>
                     </div>
                 </div>
             </div>
@@ -302,7 +310,65 @@
         <section class="projets" id="projets">
             <hr>
             <h2>Projects</h2>
-
+            <div class="box-integration-numerique">
+            <div class="header-integration-numerique">
+                <div class="logos">
+                    <img src="img/simulink.png" alt="Simulink" class="simulink">
+                    <img src="img/amd.png" alt="Amd" class="amd"> 
+                </div>                       
+                <h3>Implementation of a Radar Processing Algorithm (FFT) on AMD Versal AI-ML – Exploiting AI Engines</h3>
+                <p><em>ENSEIRB-MATMECA: Third-year industrial project in collaboration with Thales AVS</em></p>
+            </div>
+            <div class="content-integration-numerique">
+                <p><strong>Project Objectives</strong></p>
+                <p>
+                    The objective of this project is to evaluate and implement a design flow
+                    <strong>Matlab ➔ Simulink ➔ AMD Model Composer ➔ Vivado ➔ Vitis</strong> in order to deploy
+                    FFT computations from a radar algorithm onto an <strong>AMD Versal AI-ML FPGA</strong>
+                    using an <strong>Alinx VD100 evaluation board</strong>. 
+                    <br><br>
+                    This project was carried out by a team of 3 students as part of a third-year semester project
+                    in collaboration with Thales AVS and is structured around several objectives:
+                    <ul>
+                        <li>Install and validate the toolchain (Matlab/Simulink, Model Composer, Vivado, Vitis) and ensure version compatibility.</li>
+                        <li>Adapt an existing Simulink model for execution on AI Engines (AIE-ML) using a dataflow/streaming architecture.</li>
+                        <li>Simulate, functionally validate, and deploy the implementation on the Versal target (VD100).</li>
+                        <li>Establish a critical assessment of the flow (constraints, tool maturity, performance, reproducibility).</li>
+                    </ul>  
+                </p>
+                <p><strong>Achievements</strong></p>
+                <ul>
+                    <li>Understanding of the Versal architecture (PS/PL/AIE), NoC and DDR, and analysis of AI Engine acceleration mechanisms.</li>
+                    <li>Integration of AMD Toolbox within Simulink: encapsulation of C++ kernels into AIE Kernel blocks and configuration of streaming interfaces.</li>
+                    <li>Validation through AIE simulation (functional verification + experimentation with parallel execution across multiple AI Engines).</li>
+                    <li>Construction of the complete flow:
+                        <ul>
+                            <li><strong>Vivado:</strong> Block Design (PS/DDR/NoC/AIE/AXI), bitstream generation and hardware export (.xsa).</li>
+                            <li><strong>Vitis:</strong> System Project (Platform .xpfm, AIE component graph/kernels, HLS mm2s/s2mm, host application via XRT).</li>
+                        </ul>
+                    </li>
+                    <li>Board deployment via SD boot (Linux + rootfs + xclbin + application) and debugging/monitoring through UART (PuTTY).</li>
+                    <li>Analysis of encountered challenges: version dependencies, VD100/AIE documentation limitations, memory/streaming constraints and model adaptation.</li>
+                </ul>
+                <p><strong>Technical Concepts Used</strong></p>
+                <ul>
+                    <li>AMD Versal AI-ML: PS/PL/AIE architecture, NoC, DDR, AXI interconnects.</li>
+                    <li>AI Engine (AIE) / dataflow: vector kernels, AIE graph, parallelism, memory and streaming constraints.</li>
+                    <li>Toolchain: Matlab/Simulink, AMD Model Composer, Vivado (bitstream), Vitis (platform/system integration, packaging).</li>
+                    <li>Embedded deployment: Linux target, SD boot, UART console, host execution and orchestration via XRT.</li>
+                </ul>
+                <p>
+                    <strong>Results</strong> 
+                    <ul>
+                        <li>Full validation of the PL + PS + AIE development flow</li>
+                        <li>Demonstration of the feasibility of FFT acceleration on a Versal AI-ML architecture</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <a href="documents/ESE9_STAG1_groupe_4_2025_2026.pdf" target="_blank" class="btn-link">View the project presentation (PDF)</a>
+                    </p>
+                </div>
+            </div>
             <div class="box-robotique">
                 <div class="header-robotique">
                     <div class="logos">

@@ -102,6 +102,7 @@
                                 <li>Manipulation d'objet avec le bras robotique XARM6.</li>
                                 <li>Optimisation matérielle et logicielle d’une application de multiplication matricielle 
                                     sur carte de développement PYNQ-Z2.</li>
+                                <li>Implémentation d’algorithme « radar » sur FPGA VERSAL, en utilisant les AIE ML</li>
                             </ul>
                         </div>
                     </div>
@@ -179,6 +180,14 @@
                     <div class="third-year">
                         <p><strong>Troisième année : standardisation de l'intégration et de l'utilisation d'un SoC RF</strong></p>
                         <ul>
+                            <li>Conception d'une architecture logicielle visant à proposer une API générique,
+                                abstraite et simple d'utilisation pour l'utilisateur</li>
+                                <ul>
+                                    <li>Définition d’un mapping mémoire virtuel : association d’une adresse virtuelle
+                                        à une fonctionnalité.</li>
+                                    <li>Commandes haut niveau orientées fonctionnalité (ex : SetFrequency)</li>
+                                    <li>Commandes bas niveau permettant un accès direct aux registres (ex : WriteRegister)</li>
+                                </ul>
                             <li>A venir...</li>
                         </ul>
                     </div>
@@ -297,6 +306,63 @@
         <section class="projets" id="projets">
             <hr>
             <h2>Projets</h2>
+            <div class="box-integration-numerique">
+                <div class="header-integration-numerique">
+                    <div class="logos">
+                        <img src="img/simulink.png" alt="Simulink" class="simulink">
+                        <img src="img/amd.png" alt="Amd" class="amd"> 
+                    </div>                       
+                <h3>Implémentation d’un traitement radar (FFT) sur AMD Versal AI-ML – Exploitation des AI Engines</h3>                    <p><em>Enseirb-Matmeca : Projet industriel de troisième année en collaboration avec Thales AVS</em></p>
+                </div>
+                <div class="content-integration-numerique">
+                    <p><strong>Objectifs du projet</strong></p>
+                    <p>L'objectif de ce projet est d'évaluer et de mettre en oeuvre une chaîne de conception
+                        <strong>Matlab ➔ Simulink ➔ AMD Model Composer ➔ Vivado ➔ Vitis</strong> afin de déployer
+                        des calculs de FFT d'un algorithme radar sur un <strong>FPGA AMD Versal AI-ML</strong>
+                        via une carte d'évaluation <strong>Alinx VD100</strong>. 
+                        <br><br>
+                        Ce projet est réalisé en groupe de 3 étudiants dans le cadre du projet semestriel de 
+                        troisième année en collaboration avec Thales AVS et se décompose en plusieurs objectifs :
+                        <ul>
+                            <li>Installer et valider l’environnement outillé (Matlab/Simulink, Model Composer, Vivado, Vitis) et leurs compatibilités.</li>
+                            <li>Adapter un modèle Simulink existant pour l’exécution sur AI Engine (AIE-ML) en privilégiant une architecture dataflow/streaming.</li>
+                            <li>Simuler, valider fonctionnellement puis déployer sur cible Versal (VD100).</li>
+                            <li>Établir un bilan critique du flow (contraintes, maturité outillage, performances, reproductibilité).</li>
+                        </ul>  
+                    </p>
+                    <p><strong>Réalisations</strong></p>
+                    <ul>
+                        <li>Prise en main de l’architecture Versal (PS/PL/AIE), NoC et DDR, et compréhension du rôle des AI Engines pour l’accélération.</li>
+                        <li>Intégration AMD Toolbox dans Simulink : encapsulation de kernels C++ dans des blocs AIE Kernel et paramétrage des interfaces de flux.</li>
+                        <li>Validation par simulation AIE (fonctionnel + expérimentation du parallélisme sur plusieurs AIE).</li>
+                        <li>Construction du flow complet :
+                        <ul>
+                            <li><strong>Vivado :</strong> Block Design (PS/DDR/NoC/AIE/AXI), génération du bitstream et export matériel (.xsa).</li>
+                            <li><strong>Vitis :</strong> System Project (Platform .xpfm, AIE component graph/kernels, HLS mm2s/s2mm, application host via XRT).</li>
+                        </ul>
+                        </li>
+                        <li>Déploiement sur carte via boot SD (Linux + rootfs + xclbin + application) et visualisation/diagnostic via UART (PuTTY).</li>
+                        <li>Analyse des difficultés : dépendances versions, documentation VD100/AIE, contraintes mémoire/streaming et adaptation du modèle.</li>
+                    </ul>
+                    <p><strong>Notions utilisées</strong></p>
+                    <ul>
+                        <li>AMD Versal AI-ML : architecture PS/PL/AIE, NoC, DDR, interconnexions AXI.</li>
+                        <li>AI Engine (AIE) / dataflow : kernels vectoriels, graph AIE, parallélisme, contraintes mémoire et streaming.</li>
+                        <li>Chaîne outillée : Matlab/Simulink, AMD Model Composer, Vivado (bitstream), Vitis (platform/system, packaging).</li>
+                        <li>Déploiement embarqué : Linux cible, boot SD, console UART, exécution host et orchestration via XRT.</li>
+                    </ul>
+                    <p>
+                        <strong>Résultats</strong> 
+                        <ul>
+                            <li>Validation complète du flow de développement PL + PS + AIE</li>
+                            <li>Démonstration de la faisabilité d’une accélération FFT sur architecture Versal AI-ML</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <a href="documents/ESE9_STAG1_groupe_4_2025_2026.pdf" target="_blank" class="btn-link">Voir la présentation PDF</a>
+                    </p>
+                </div>
+            </div>  
             <div class="box-robotique">
                 <div class="header-robotique">
                     <div class="logos">
@@ -308,7 +374,7 @@
                 </div>
                 <div class="content-robotique">
                     <p><strong>Objectifs du projet</strong></p>
-                    <p>L'objectirf de ce projet est de concevoir un système ROS capable de détecter,
+                    <p>L'objectif de ce projet est de concevoir un système ROS capable de détecter,
                         saisir et déplacer des pièces à l’aide du bras robotisé <strong>XARM6.</strong>
                         Le but est de réaliser une manipulation fiable et autonome permettant de :
                         <ul>
