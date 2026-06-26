@@ -180,18 +180,26 @@
                         </ul>
                     </div>
                     <div class="third-year">
-                        <p><strong>Third year: standardization of RF SoC integration and testing</strong></p>
-                            <ul>
-                                <li>Design of a software architecture aimed at providing a generic,
-                                    abstract and user-friendly API</li>
-                                    <ul>
-                                        <li>Definition of a virtual memory mapping: association of a virtual address
-                                            with a functionality.</li>
-                                        <li>High-level commands oriented toward functionality (e.g., SetFrequency)</li>
-                                        <li>Low-level commands allowing direct access to registers (e.g., WriteRegister)</li>
-                                    </ul>
-                                <li>To be continued...</li>
-                            </ul>
+                    <p><strong>Third Year: Standardizing the Integration and Use of an RF SoC</strong></p>
+                    Design of a software architecture providing a generic, hardware-independent, 
+                    and user-friendly API for controlling different RF SoCs.
+                    <ul>
+                        <li>Defined a virtual memory mapping by associating virtual 
+                            addresses with software functionalities (<strong>C++ map</strong>).</li>
+                        <li>Designed a hierarchical command architecture:</li>
+                        <ul>
+                            <li>High-level commands (e.g., <strong>SetFrequency</strong>, <strong>InitSocRf</strong>, <strong>StartTx</strong>).</li>
+                            <li>Low-level commands providing direct register access (<strong>WriteRegister</strong>, <strong>ReadRegister</strong>).</li>
+                            <li>Low-level commands providing direct memory access (<strong>WriteMemory</strong>, <strong>ReadMemory</strong>).</li>
+                        </ul>
+                        <li>Developed bidirectional Ethernet communication between a PC and a DSP.</li>
+                        <li>Designed a communication protocol based on <strong>Protocol Buffers</strong>, 
+                            using <strong>NanoPB</strong> to meet embedded system constraints.</li>
+                        <li>Validated interoperability between the <strong>Python</strong>-based PC 
+                            application and the <strong>C++</strong>-based DSP application.</li>
+                        <li>Validated both the <strong>Tx transmission chain</strong> and the 
+                            <strong>Rx reception chain</strong>.</li>
+                    </ul>
                     </div>
                 </div>
             </div>

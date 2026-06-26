@@ -179,16 +179,26 @@
                     </div>
                     <div class="third-year">
                         <p><strong>Troisième année : standardisation de l'intégration et de l'utilisation d'un SoC RF</strong></p>
+                        Conception d'une architecture logicielle visant à proposer une API générique, abstraite
+                        et simple d'utilisation pour le pilotage de différents SoC RF.
                         <ul>
-                            <li>Conception d'une architecture logicielle visant à proposer une API générique,
-                                abstraite et simple d'utilisation pour l'utilisateur</li>
-                                <ul>
-                                    <li>Définition d’un mapping mémoire virtuel : association d’une adresse virtuelle
-                                        à une fonctionnalité.</li>
-                                    <li>Commandes haut niveau orientées fonctionnalité (ex : SetFrequency)</li>
-                                    <li>Commandes bas niveau permettant un accès direct aux registres (ex : WriteRegister)</li>
-                                </ul>
-                            <li>A venir...</li>
+                            <li>Définition d’un mapping mémoire virtuel : association d’une adresse virtuelle
+                                à une fonctionnalité (<strong>map en C++</strong>).</li>
+                            <li>Conception d'une hiérarchie de commandes : </li>
+                            <ul>
+                                <li>Commandes haut niveau (ex : <strong>SetFrequency</strong>, <strong>InitSocRf</strong>, <strong>StartTx</strong>.)</li>
+                                <li>Commandes bas niveau permettant un accès direct aux registres (<strong>WriteRegister</strong>, 
+                                    <strong>ReadRegister</strong>)</li>
+                                <li>Commandes bas niveau permettant un accès direct aux différentes mémoires 
+                                    (<strong>WriteMemory</strong>, <strong>ReadMemory</strong>)</li>
+                            </ul>
+                            <li>Développement d'une communication bidirectionnelle entre un PC et un DSP via Ethernet.</li>
+                            <li>Conception d'un protocole d'échange basé sur <strong>Protocol Buffers</strong>, avec 
+                                l'utilisation de <strong>NanoPB</strong> pour répondre aux contraintes embarquées.</li>
+                            <li>Validation de l'interopérabilité des messages entre l'application PC en <strong>Python</strong> 
+                                et l'application DSP en <strong>C++.</strong></li>
+                            <li>Validation fonctionnelle de la <strong>chaîne d'émission Tx</strong>
+                                et de la <strong>chaîne de réception Rx.</strong></li>
                         </ul>
                     </div>
                 </div>
